@@ -9,7 +9,7 @@ function cardPokemon (pokemon) {
                         <ul>
                             <li>Tipo: ${pokemon.tipo}</li>
                             <li>Ataque favorito: ${pokemon.ataqueFavorito}</li>
-                            <li>Evolución/es:${pokemon.evolucion}</li>
+                            <li>Evolución/es: ${pokemon.evolucion}</li>
                         </ul>
                     </div>
                 </div>
