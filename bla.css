@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+}
+
+/* #banner {
+    height: 400px;
+    
+    margin: 10px 0px;
+} */
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+main {
+    background-image: url(./Imagenes/fondo-de-pantalla.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#container {
+    background-color: white;
+    margin: 300px 0px 100px 0px;
+    padding: 40px 0px;
+}
+
+.card {
+    width: 270px;
+    height: 300px;
+}
+
+.slide {
+    width: 270px;
+    height: 300px;
+}
+
+.card:hover .slide.slide2 {
+    transform: translateY(5px);
+    visibility: visible;
+    z-index: 2;
+}
+
+.slide1 {
+    border: 3px solid black;
+    border-radius: 0.7rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+}
+
+.slide2 {
+    font-weight: bold;
+    font-size: 19px;
+    height: 160px;
+    visibility: hidden;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 0.7rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-90px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.caracteristica {
+    width: 230px;
+}
+
+ul {
+    padding: 8px;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 8px
+}
+
+.card-imagen {
+    height: 78%;
+    width: 78%;
+}
+
+#imagen-pokemon {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+.electrico {
+    background-color: rgba(255, 210, 51, 0.500);
+}
+
+.fuego {
+    background-color: rgba(255, 66, 28, 0.500);
+}
+
+.agua {
+    background-color: rgba(173, 216, 230, 0.5);
+}
+
+.hoja {
+    background-color: rgba(0, 128, 0, 0.500);
+}
+
+.dragon {
+    background-color: rgba(126, 108, 249, 0.500);
+}
+
+.psiquico {
+    background-color: rgba(253, 86, 156, 0.500);
+}
+
+.veneno {
+    background-color: rgba(156, 66, 140, 0.500);
+}
+
+.normal {
+    background-color: rgb(185, 182, 168, 0.500);
+}
+
+.roca {
+    background-color: rgb(188, 172, 102, 0.500);
+}
+
+.acero {
+    background-color: rgb(169, 169, 187, 0.500);
+}
+
+.hada {
+    background-color: rgb(255, 172, 255, 0.500);
+}
+
+.lucha {
+    background-color: rgb(194, 87, 69, 0.500);
+}
+
+.siniestro {
+    background-color: rgb(120, 84, 66, 0.500);
+}
+
+.fantasma {
+    background-color: rgb(75, 75, 159, 0.500);
+}
+
+.tierra {
+    background-color: rgb(221, 187, 84, 0.500);
+}
+
+.hielo {
+    background-color: rgb(120, 222, 255, 0.500);
+}
+
+.acero-roca {
+    background: linear-gradient(126deg, rgba(169,169,187,0.6) 0%, rgba(188,172,102,0.6) 100%);
+}
+
+.siniestro-acero {
+    background: linear-gradient(126deg, rgba(120,84,66,0.5) 0%, rgba(169,169,187,0.5) 100%);
+}
+
+.fantasma-fuego {
+    background: linear-gradient(126deg, rgba(75,75,159,0.5) 0%, rgba(255,66,28,0.5) 100%);;
+}
+
+.bicho-volador {
+    background: linear-gradient(126deg, rgba(171,188,28,0.5) 0%, rgba(105,159,255,0.5) 100%);;
+}
+
+.volador-normal {
+    background: linear-gradient(126deg, rgba(105,159,255,1) 0%, rgba(185,182,168,0.5) 100%);;
+}
+
+.dragon-psiquico {
+    background: linear-gradient(126deg, rgba(108,93,203,0.500) 0%, rgba(253,86,156,0.500) 100%);
+}
+
+
+/* .card:hover {
+    height: 360px;
+    transition: .7s;
+} */
+
+/* .card:hover .slide.slide1 {
+    transform: translateY(0px);
+} */
+
+/* .card:hover {
+    height: 370px;
+    width: 290px;
+    transition-duration: 2s;
+} */
+
+/* .card-nombre {
+    font-size: 25px;
+    font-weight: bold;
+} */
+
