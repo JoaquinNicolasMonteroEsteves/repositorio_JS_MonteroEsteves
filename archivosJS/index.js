@@ -1,4 +1,5 @@
 const container = document.getElementById("container")
+const inputBuscador = document.getElementById("buscador")
 
 function cardPokemon (pokemon) {
     return `<label>
@@ -7,7 +8,7 @@ function cardPokemon (pokemon) {
                     <div class="slide slide0">
                         <button type="button" class="botonesCarrito"><img src="./Imagenes/pokebola.png" class="imagenCarrito"></button>
                     </div>
-                    <div class="slide slide1 ${pokemon.bg}" id="card${pokemon.id}">
+                    <div class="slide slide1 ${pokemon.bTipo}" id="card${pokemon.id}">
                         <div class="card-nombre"><h2>${pokemon.nombre}</h2></div>
                         <div class="card-imagen"><img id="imagen-pokemon" src=${pokemon.imagen}></div>
                     </div>
@@ -24,8 +25,6 @@ function cardPokemon (pokemon) {
             </label>`
 }
 
-
-
 function cargarPokemones (array) {
     let contenido = ""
         if(array.length > 0) {
@@ -37,18 +36,23 @@ function cargarPokemones (array) {
 }
 cargarPokemones(pokemones)
 
-function mostrarSeleccionado () {
-    const seleccionado = document.querySelector("input:checked")
-    if (seleccionado.length >= 1 && seleccionado.length < 6) {
-        let a = pokemones.find(encontrado => encontrado.id === parseInt(seleccionado.value))
-        equipo.push(a)
-        return equipo
-    } else if (seleccionado.length < 1) {
-        console.log("Por favor, seleccione uno o más pokemones")
-    } else if (seleccionado.length > 5) {
-        console.log("No puede seleccionar más de 5 pokemones")
-    }
-}
+// function filtrarPokemonesNombre () {
+//     if (inputBuscador.ariaValueMax.trim() !== "")
+
+// }
+
+// function mostrarSeleccionado () {
+//     const seleccionado = document.querySelector("input:checked")
+//     if (seleccionado.length >= 1 && seleccionado.length < 6) {
+//         let a = pokemones.find(encontrado => encontrado.id === parseInt(seleccionado.value))
+//         equipo.push(a)
+//         return equipo
+//     } else if (seleccionado.length < 1) {
+//         console.log("Por favor, seleccione uno o más pokemones")
+//     } else if (seleccionado.length > 5) {
+//         console.log("No puede seleccionar más de 5 pokemones")
+//     }
+// }
 
 // function seleccionados () {
 //     let cartas = document.querySelectorAll('input[name="pokecard"]:checked')

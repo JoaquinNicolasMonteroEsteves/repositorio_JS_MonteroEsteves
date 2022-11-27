@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/bla.css">
+    <link rel="stylesheet" href="./styles/estilos.css">
     <link rel="icon" href="./Imagenes/pokebola.png">
     <script defer src="./archivosJS/pokemones.js"></script>
     <script defer src="./archivosJS/index.js"></script>
@@ -15,6 +15,15 @@
         <img src="./Imagenes/Pokelogo2.png" alt="Logo de la página, pokEquipo escrito en formato de letra Pokemon" id="imagenLogo">
     </header>
     <main>
+        <div id="buscadores">
+            <img src="./Imagenes/Lupa.png" alt="Una lupa" id="imagenLupa">
+            <input type="search" id="buscador">
+            <select name="select" id="opcionesFiltro">
+                <option value="vacio" selected hidden>Filtro</option>
+                <option value="nombre">Nombre</option>
+                <option value="tipo">Tipo</option>
+            </select>
+        </div> 
         <div id="container">
         </div>
     </main>

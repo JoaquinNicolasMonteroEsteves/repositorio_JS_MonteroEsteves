@@ -4,6 +4,10 @@
     padding: 0px;
 }
 
+header {
+    background: linear-gradient(90deg, white 95%, rgba(128, 128, 128, 0.488) 100%) ;
+}
+
 body {
     font-family: 'Nunito', sans-serif;
 }
@@ -14,14 +18,111 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-top: 400px;
+    padding-top: 330px;
     padding-bottom: 200px;
+}
+
+div#buscadores {
+    padding: 5px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    height: 35px;
+}
+
+img#imagenLupa {
+    border-radius: 0.5em;
+    background-color: grey;
+    margin-right: 5px;
+}
+
+input#buscador {
+    width: 40vw;
+    border: 2px solid grey;
+    border-radius: 0.5em;
+    font-size: 20px;
+    margin-right: 5px;
+    background-color: lightgrey;
+
+}
+
+input#buscador:focus {
+    border: 3px solid grey;
+}
+
+select#opcionesFiltro {
+    width: 25vw;
+    border: 2px solid grey;
+    font-size: 15px;
+    background-color: lightgrey;
+    border-radius: 0.5em;
+}
+
+@media (min-width: 495px) {
+    header {
+        background: linear-gradient(90deg, white 60%, rgba(128, 128, 128, 0.841) 100%) ;
+    }
+
+    div#buscadores {
+        height: 40px;
+    }
+
+    input#buscador, select#opcionesFiltro {
+        border: 3px solid grey;
+        transform: translateX(0px);
+        font-size: 20px;
+    }
+
+    input#buscador:focus {
+        border: 4px solid grey;
+    }
+}
+
+@media (min-width: 760px) {
+    header {
+        background: linear-gradient(90deg, white 40%, gray 100%) ;
+    }
+
+    div#buscadores {
+        height: 45px;
+    }
+
+    input#buscador, select#opcionesFiltro {
+        border: 4px solid grey;
+        font-size: 25px;
+    }
+    
+    input#buscador:focus {
+        border: 5px solid grey;
+    }
+}
+
+@media (min-width: 1080px) {
+    header {
+        background: linear-gradient(90deg, white 30%, gray 100%) ;
+    }
+
+    div#buscadores {
+        height: 50px;
+    }
+    
+    input#buscador, select#opcionesFiltro {
+        border: 5px solid grey;
+        font-size: 30px;
+    }
+
+    input#buscador:focus {
+        border: 6px solid grey;
+    }
+
+
+
 }
 
 #container {
     color: rgb(0, 0, 0);
     background-color: lightgray;
-    padding: 40px 0px;
+    padding: 40px 0px 200px;
 }
 
 .card-pokemon {
@@ -29,17 +130,16 @@ main {
 }
 
 .card {
-    width: 270px;
-    height: 300px;
+    width: 235px;
+    height: 250px;
     border: 3px solid transparent;
     border-radius: 0.7rem;
 }
 
 .slide {
-    width: 270px;
-    height: 300px;
+    width: 235px;
+    height: 250px;
 }
-
 
 .imagenCarrito {
     width: 31px;
@@ -50,7 +150,7 @@ main {
     width: 30px;
     height: 30px;
     visibility: hidden;
-    transform:translate(235px, 5px);
+    transform:translate(200px, 215px);
     position: relative;
     z-index: 2;
 }
@@ -71,7 +171,7 @@ main {
     border-radius: 0.7rem;
     font-weight: bold;
     font-size: 19px;
-    height: 160px;
+    height: 180px;
     visibility: hidden;
     background-color: white;
     position: relative;
@@ -79,7 +179,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translate(-4px, -200px);
+    transform: translate(-4px, -220px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
@@ -108,11 +208,12 @@ main {
 }
 
 .caracteristica {
-    width: 230px;
+    width: 200px;
 }
 
 ul {
-    padding: 8px;
+    padding-left: 17px;
+    width: 200px;    
 }
 
 h2 {
@@ -205,38 +306,30 @@ h2 {
     background-color: rgb(120, 222, 255, 0.500);
 }
 
-.acero-roca {
+.acero.roca {
     background: linear-gradient(126deg, rgba(169,169,187,0.6) 0%, rgba(188,172,102,0.6) 100%);
 }
 
-.siniestro-acero {
+.siniestro.acero {
     background: linear-gradient(126deg, rgba(120,84,66,0.5) 0%, rgba(169,169,187,0.5) 100%);
 }
 
-.fantasma-fuego {
+.fantasma.fuego {
     background: linear-gradient(126deg, rgba(75,75,159,0.5) 0%, rgba(255,66,28,0.5) 100%);;
 }
 
-.bicho-volador {
+.bicho.volador {
     background: linear-gradient(126deg, rgba(171,188,28,0.5) 0%, rgba(105,159,255,0.5) 100%);;
 }
 
-.volador-normal {
+.volador.normal {
     background: linear-gradient(126deg, rgba(105,159,255,1) 0%, rgba(185,182,168,0.5) 100%);;
 }
 
-.dragon-psiquico {
+.dragon.psiquico {
     background: linear-gradient(126deg, rgba(108,93,203,0.500) 0%, rgba(253,86,156,0.500) 100%);
 }
 
-@media (min-width: 480px) {
-    header {
-        background: linear-gradient(90deg, white 60%, rgba(128, 128, 128, 0.841) 100%) ;
-    }
-}
 
-@media (min-width: 768px) {
-    header {
-        background: linear-gradient(90deg, white 40%, gray 100%) ;
-    }
-}
+
+
