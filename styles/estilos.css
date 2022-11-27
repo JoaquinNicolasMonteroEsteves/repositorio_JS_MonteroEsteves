@@ -92,6 +92,7 @@ select#opcionesFiltro {
         font-size: 25px;
     }
     
+    
     input#buscador:focus {
         border: 5px solid grey;
     }
