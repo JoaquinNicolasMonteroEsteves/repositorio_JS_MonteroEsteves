@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/estilos.css">
     <link rel="icon" href="./Imagenes/pokebola.png">
+    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script defer src="./archivosJS/pokemones.js"></script>
     <script defer src="./archivosJS/index.js"></script>
     <title>PokEquipo</title>
@@ -17,14 +18,20 @@
     <main>
         <div id="buscadores">
             <img src="./Imagenes/Lupa.png" alt="Una lupa" id="imagenLupa">
-            <input type="search" id="buscador">
+            <input type="search" id="buscador" placeholder="Ingresa un filtro">
             <select name="select" id="opcionesFiltro">
-                <option value="vacio" selected hidden>Filtro</option>
+                <option value="vacio" selected hidden>------</option>
                 <option value="nombre">Nombre</option>
-                <option value="tipo">Tipo</option>
+                <option value="bTipo">Tipo</option>
             </select>
         </div> 
         <div id="container">
+        </div>
+        <div>
+            <button id="btnBuscados">Mostrar buscados</button>
+            <button id="btnLimpiar">Limpiar resultados de búsqueda</button>
+            <div id="nbuscados"></div>
+            <div id="tbuscados"></div>
         </div>
     </main>
 </body>

@@ -1,5 +1,10 @@
 const container = document.getElementById("container")
 const inputBuscador = document.getElementById("buscador")
+const opcionesFiltro = document.getElementById("opcionesFiltro")
+const ncontainer = document.getElementById("nbuscados")
+const tcontainer = document.getElementById("tbuscados")
+const btnBuscados = document.getElementById("btnBuscados")
+const btnLimpiar = document.getElementById("btnLimpiar")
 
 function cardPokemon (pokemon) {
     return `<label>
@@ -9,7 +14,7 @@ function cardPokemon (pokemon) {
                         <button type="button" class="botonesCarrito"><img src="./Imagenes/pokebola.png" class="imagenCarrito"></button>
                     </div>
                     <div class="slide slide1 ${pokemon.bTipo}" id="card${pokemon.id}">
-                        <div class="card-nombre"><h2>${pokemon.nombre}</h2></div>
+                        <div class="card-nombre"><h2>${capitalize(pokemon.nombre)}</h2></div>
                         <div class="card-imagen"><img id="imagen-pokemon" src=${pokemon.imagen}></div>
                     </div>
                     <div class="slide slide2">
@@ -25,6 +30,24 @@ function cardPokemon (pokemon) {
             </label>`
 }
 
+function cardPokemonBuscado (pokemon) {
+    return `<label>
+                <input type="checkbox" class="card-pokemon" name="pokecard" value="${pokemon.id}"/>
+                <div class="card ">                    
+                    <div class="slide slide1 ${pokemon.bTipo} buscado" id="card${pokemon.id}">
+                        <div class="card-nombre"><h2>${capitalize(pokemon.nombre)}</h2></div>
+                        <div class="card-imagen"><img id="imagen-pokemon" src=${pokemon.imagen}></div>
+                    </div>                    
+                </div>
+            </label>`
+}
+
+function capitalize (x) {
+    let letraInicial = x.substring(0,1)
+    let resto = x.substring(1, x.length)
+    return (letraInicial.toUpperCase() + resto)
+}
+
 function cargarPokemones (array) {
     let contenido = ""
         if(array.length > 0) {
@@ -36,10 +59,118 @@ function cargarPokemones (array) {
 }
 cargarPokemones(pokemones)
 
-// function filtrarPokemonesNombre () {
-//     if (inputBuscador.ariaValueMax.trim() !== "")
+function cargarPokemonesBuscados (array, elemento) {
+    let contenido = ""
+        if(array.length > 0) {
+            array.forEach (pokemon => {
+                contenido += cardPokemonBuscado(pokemon)
+            })
+            elemento.innerHTML = contenido
+        }
+}
 
+let limpiarBuscador = () => {
+    Swal.fire({
+        position: 'center',
+        imageUrl: './Imagenes/VoltorbEnojado.png',
+        title: 'No se han hayado coincidencias',
+        text: 'Intente nuevamente, por favor',
+        showConfirmButton: false,
+        timer: 1500
+    })
+    inputBuscador.value = ""
+    cargarPokemones(pokemones)
+}
+
+let limpiarBuscados = () => {
+    tcontainer.innerHTML = ""
+    ncontainer.innerHTML = ""
+}
+btnLimpiar.addEventListener("click", limpiarBuscados)
+
+
+function filtrarPokemonesNombre () {
+        if (inputBuscador.value.trim() !== "" && opcionesFiltro.value === "nombre") {
+            let resultado = pokemones.filter(pokemon => pokemon.nombre.includes(inputBuscador.value.toLowerCase().trim()))
+            if (resultado.length > 0) {
+                resultado.forEach(x => {
+                    if((buscadosNombre.some(y => y.id === x.id)) === false){
+                        buscadosNombre.push(x)
+                    }
+                })
+                sessionStorage.setItem("Buscados-Nombre", JSON.stringify(buscadosNombre))
+                cargarPokemones(resultado)
+            } else {
+                limpiarBuscador()
+            }
+        } else if (inputBuscador.value.trim() !== "" && opcionesFiltro.value === "bTipo") {
+            let resultado = pokemones.filter(pokemon => pokemon.bTipo.includes(inputBuscador.value.toLowerCase().trim()))
+            if (resultado.length > 0) {
+                resultado.forEach(x => {
+                    if((buscadosTipo.some(y => y.id === x.id)) === false) {
+                        buscadosTipo.push(x)
+                    }
+                })
+                sessionStorage.setItem("Buscados-Tipo", JSON.stringify(buscadosTipo))
+                cargarPokemones(resultado)
+            } else {
+                limpiarBuscador()
+            }
+        } else {
+            cargarPokemones(pokemones)
+        }      
+
+}
+inputBuscador.addEventListener("search", filtrarPokemonesNombre)
+
+let mostrarBuscados = () => {
+    let bnombre = JSON.parse(sessionStorage.getItem("Buscados-Nombre"))
+    let btipo = JSON.parse(sessionStorage.getItem("Buscados-Tipo"))
+    cargarPokemonesBuscados(bnombre, ncontainer)
+    cargarPokemonesBuscados(btipo, tcontainer)
+}
+btnBuscados.addEventListener("click", mostrarBuscados)
+
+
+
+// function filtrarPokemonesTipo () {
+//     inputBuscador.addEventListener("input", () =>{
+//         if (inputBuscador.value.trim() !== "") {
+//             let resultado = pokemones.filter(pokemon => pokemon.bTipo.includes(inputBuscador.value.toLowerCase().trim()))
+//             if (resultado.length > 0) {
+//                 cargarPokemones(resultado)
+//             } 
+//         } else {
+//             cargarPokemones(pokemones)
+//         }
+//     })
 // }
+
+// 
+
+// function filtrar () {
+//     let a = opcionesFiltro.value
+//     return a
+// }
+
+// Swal.fire({
+//     position: 'top',
+//     icon: 'warning',
+//     width: 300,
+//     height: 90,
+//     text: 'Buscá bien, forro',
+//     showConfirmButton: false,
+//     timer: 1500
+// })
+
+// inputBuscador.addEventListener("input", () =>{
+//     if (inputBuscador.value.trim() !== "") {
+//         filtrarPokemonesNombre()
+//     } else {
+//         cargarPokemones(pokemones)
+//     }
+    
+// })
 
 // function mostrarSeleccionado () {
 //     const seleccionado = document.querySelector("input:checked")

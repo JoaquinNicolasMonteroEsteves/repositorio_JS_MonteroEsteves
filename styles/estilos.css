@@ -22,12 +22,17 @@ main {
     padding-bottom: 200px;
 }
 
+
 div#buscadores {
+    margin-left: 2.8%;
     padding: 5px 5px;
-    display: flex;
+    display: flex; 
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     height: 35px;
+    inline-size: fit-content;
+    background-color: lightgrey;
+    border-radius: 0.5em;
 }
 
 img#imagenLupa {
@@ -40,7 +45,7 @@ input#buscador {
     width: 40vw;
     border: 2px solid grey;
     border-radius: 0.5em;
-    font-size: 20px;
+    font-size: 15px;
     margin-right: 5px;
     background-color: lightgrey;
 
@@ -72,6 +77,14 @@ select#opcionesFiltro {
         transform: translateX(0px);
         font-size: 20px;
     }
+    
+    input#buscador {
+        width: 35vw;
+    }
+
+    select#opcionesFiltro{
+        width: 20vw;
+    }
 
     input#buscador:focus {
         border: 4px solid grey;
@@ -92,7 +105,14 @@ select#opcionesFiltro {
         font-size: 25px;
     }
     
+    input#buscador {
+        width: 30vw;
+    }
     
+    select#opcionesFiltro{
+        width: 17vw;
+    }
+
     input#buscador:focus {
         border: 5px solid grey;
     }
@@ -120,10 +140,25 @@ select#opcionesFiltro {
 
 }
 
+#nbuscados, #tbuscados {
+    color: rgb(0, 0, 0);
+    margin: 10px 103px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
 #container {
     color: rgb(0, 0, 0);
-    background-color: lightgray;
-    padding: 40px 0px 200px;
+    padding: 40px 0px 40px;
+    margin-bottom: 160px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
 }
 
 .card-pokemon {
@@ -131,6 +166,7 @@ select#opcionesFiltro {
 }
 
 .card {
+    background-color: lightgray;
     width: 235px;
     height: 250px;
     border: 3px solid transparent;
@@ -165,6 +201,10 @@ select#opcionesFiltro {
     align-items: center;
     z-index: 1;
     transform: translate(-4px, -34px)
+}
+
+.slide1.buscado {
+    transform: translate(-4px, -4px);
 }
 
 .slide2 {
@@ -234,13 +274,7 @@ h2 {
     object-position: center;
 }
 
-#container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
+
 
 
 .electrico {
