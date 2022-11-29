@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./styles/estilos.css">
     <link rel="icon" href="./Imagenes/pokebola.png">
     <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script defer src="./archivosJS/pokemones.js"></script>
     <script defer src="./archivosJS/index.js"></script>
     <title>PokEquipo</title>
@@ -16,22 +17,30 @@
         <img src="./Imagenes/Pokelogo2.png" alt="Logo de la página, pokEquipo escrito en formato de letra Pokemon" id="imagenLogo">
     </header>
     <main>
-        <div id="buscadores">
-            <img src="./Imagenes/Lupa.png" alt="Una lupa" id="imagenLupa">
-            <input type="search" id="buscador" placeholder="Ingresa un filtro">
-            <select name="select" id="opcionesFiltro">
-                <option value="vacio" selected hidden>------</option>
-                <option value="nombre">Nombre</option>
-                <option value="bTipo">Tipo</option>
-            </select>
-        </div> 
+        <div id="containerBuscadores">
+            <div id="buscadores">
+                <img src="./Imagenes/Lupa.png" alt="Una lupa" id="imagenLupa">
+                <input type="search" id="buscador" placeholder="Buscá tu Pokemon">
+                <select name="select" id="opcionesFiltro">
+                    <option value="vacio" selected hidden>------</option>
+                    <option value="nombre">Nombre</option>
+                    <option value="bTipo">Tipo</option>
+                </select>
+            </div> 
+        </div>
         <div id="container">
         </div>
-        <div>
+        <div id="resultados">
             <button id="btnBuscados">Mostrar buscados</button>
             <button id="btnLimpiar">Limpiar resultados de búsqueda</button>
-            <div id="nbuscados"></div>
-            <div id="tbuscados"></div>
+            <div>
+                <div id="nBuscadosTitulo"></div>
+                <div id="nBuscados"></div>
+            </div>
+            <div>
+                <div id="tBuscadosTitulo"></div>
+                <div id="tBuscados"></div>
+            </div>
         </div>
     </main>
 </body>

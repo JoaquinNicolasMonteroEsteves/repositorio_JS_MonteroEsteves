@@ -2,14 +2,15 @@
 * {
     margin: 0px;
     padding: 0px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.swal-modal {
+    border: 3px solid black,
 }
 
 header {
     background: linear-gradient(90deg, white 95%, rgba(128, 128, 128, 0.488) 100%) ;
-}
-
-body {
-    font-family: 'Nunito', sans-serif;
 }
 
 main {
@@ -18,13 +19,18 @@ main {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-top: 330px;
+    padding-top: 200px;
     padding-bottom: 200px;
 }
 
+div#containerBuscadores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
 
 div#buscadores {
-    margin-left: 2.8%;
     padding: 5px 5px;
     display: flex; 
     flex-direction: row;
@@ -47,6 +53,7 @@ input#buscador {
     border-radius: 0.5em;
     font-size: 15px;
     margin-right: 5px;
+    padding: 0px 5px;
     background-color: lightgrey;
 
 }
@@ -140,7 +147,12 @@ select#opcionesFiltro {
 
 }
 
-#nbuscados, #tbuscados {
+#nBuscadosTitulo, #tBuscadosTitulo {
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
+}
+
+#nBuscados, #tBuscados {
     color: rgb(0, 0, 0);
     margin: 10px 103px;
     display: flex;
@@ -150,9 +162,27 @@ select#opcionesFiltro {
     gap: 10px;
 }
 
+#btnBuscados, #btnLimpiar {
+    background-color: rgb(192,95,66);
+    font-size: 2em;
+    font-weight: bold;
+    padding: 0px 5px;
+    margin: 0px 10px;
+    border-radius: 0.2em;
+    box-shadow: -7px 5px 10px rgba(0,0,0); /*Horizontal offset | Vertical offset | Blur (difuminado) | Spread (tamaño)*/
+}
+
+#btnBuscados:hover, #btnLimpiar:hover {
+    background-color: rgb(193, 109, 83);
+}
+
+#resultados {
+    padding-top: 10px;
+}
+
 #container {
     color: rgb(0, 0, 0);
-    padding: 40px 0px 40px;
+    padding: 40px 0px 30px;
     margin-bottom: 160px;
     display: flex;
     flex-direction: row;
@@ -235,16 +265,16 @@ select#opcionesFiltro {
     visibility: visible;
 }
 
-.botonesCarrito {
+.botonesEquipo {
     background-color: transparent;
     border: none;
 }
 
-.botonesCarrito:hover {
+.botonesEquipo:hover {
     cursor: pointer;
 }
 
-.botonesCarrito:active {
+.botonesEquipo:active {
     transform: scale(1.2);
 }
 
@@ -274,7 +304,39 @@ h2 {
     object-position: center;
 }
 
+.swal-modal {
+    width: 500px;
+}
 
+.swal-text:first-child {
+    margin: 25px 0px;
+}
+
+.swal-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.swal-icon.swal-icon--custom {
+    margin: 0px;
+    background: linear-gradient(0deg, rgba(120,120,120,1) 0%, rgba(211,211,211,1) 100%);
+}
+
+.swal-icon.swal-icon--custom img {
+    width: 500;
+}
+
+.swal-title {
+    padding: 0px;
+    background: linear-gradient(0deg, rgba(100,100,100,1) 0%, rgba(120,120,120,1) 100%);;
+    color: white;
+}
+
+.swal-footer {
+    padding: 0px 0px 16px;
+    margin: 0px 16px;
+    text-align: center;
+}
 
 
 .electrico {
