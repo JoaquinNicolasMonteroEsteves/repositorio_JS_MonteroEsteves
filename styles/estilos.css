@@ -215,8 +215,8 @@ select#opcionesFiltro {
 .slide0 {
     height: 30px;
     visibility: hidden;
-    transform: translateX(27vw);
-    /* transform:translateY(88px); */
+    /* transform: translateX(27vw); */
+    transform:translate(27vw, 10.8vh);
     position: relative;
 }
 
