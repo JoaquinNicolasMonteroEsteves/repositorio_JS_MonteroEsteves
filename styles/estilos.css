@@ -197,32 +197,30 @@ select#opcionesFiltro {
 
 .card {
     background-color: lightgray;
-    width: 235px;
-    height: 250px;
+    width: 35vw;
+    height: 14vh;
     border: 3px solid transparent;
     border-radius: 0.7rem;
 }
 
 .slide {
-    width: 235px;
-    height: 250px;
+    width: 35vw;
+    height: 14vh;
 }
 
 .imagenCarrito {
-    width: 31px;
-    height: 31px;
+    width: 7vw;
 }
 
 .slide0 {
-    width: 30px;
     height: 30px;
     visibility: hidden;
-    transform:translate(200px, 215px);
+    transform:translate(88px, 90px);
     position: relative;
-    z-index: 2;
 }
 
 .slide1 {
+    font-size: 0.7em;
     border: 4px solid rgba(0, 0, 0, 0.399);
     border-radius: 0.7rem;
     position: relative;
@@ -238,11 +236,11 @@ select#opcionesFiltro {
 }
 
 .slide2 {
-    border: 4px solid black;
+    border: 2px solid black;
     border-radius: 0.7rem;
+    height: 13vh;
     font-weight: bold;
-    font-size: 19px;
-    height: 180px;
+    font-size: 0.7em;
     visibility: hidden;
     background-color: white;
     position: relative;
@@ -250,7 +248,7 @@ select#opcionesFiltro {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translate(-4px, -220px);
+    transform: translate(-2px, -150px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.4);
 }
 
@@ -263,6 +261,7 @@ select#opcionesFiltro {
 
 .card:hover .slide.slide0 {
     visibility: visible;
+    z-index: 2;
 }
 
 .botonesEquipo {
@@ -279,18 +278,18 @@ select#opcionesFiltro {
 }
 
 .caracteristica {
-    width: 200px;
+    width: 35vw;
 }
 
 ul {
     padding-left: 17px;
-    width: 200px;    
+    
 }
 
-h2 {
+/* h2 {
     font-size: 30px;
     margin-top: 8px
-}
+} */
 
 .card-imagen {
     height: 78%;
