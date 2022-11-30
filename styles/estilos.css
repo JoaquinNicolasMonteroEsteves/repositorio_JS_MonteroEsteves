@@ -219,7 +219,7 @@ select#opcionesFiltro {
     display: flex;
     flex-direction: row;
     justify-content: end;
-    transform:translateY(10.8vh);
+    transform:translateY(21.7vw);
 
 }
 
