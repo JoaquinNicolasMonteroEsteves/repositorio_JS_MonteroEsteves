@@ -5,37 +5,39 @@
     font-family: 'Nunito', sans-serif;
 }
 
-.swal-modal {
-    border: 3px solid black,
+header {
+    background: linear-gradient(90deg, white 85%, rgba(128, 128, 128, 0.488) 100%) ;
 }
 
-header {
-    background: linear-gradient(90deg, white 95%, rgba(128, 128, 128, 0.488) 100%) ;
+#imagenLogo {
+    height: 24vw;
 }
 
 main {
     color: white;
     background-image: url(../Imagenes/fondo-de-pantalla.jpg);
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 41vw;
+    padding-bottom: 21vw;
 }
+
+/*APARTADO BUSCADOR*/
 
 div#containerBuscadores {
     display: flex;
     flex-direction: row;
     justify-content: center;
-
 }
 
 div#buscadores {
-    padding: 5px 5px;
-    display: flex; 
+    padding: 1.2vw 1.2vw;
+    display: flex;
     flex-direction: row;
     justify-content: center;
-    height: 35px;
+    height: 8vw;
     inline-size: fit-content;
     background-color: lightgrey;
     border-radius: 0.5em;
@@ -44,207 +46,108 @@ div#buscadores {
 img#imagenLupa {
     border-radius: 0.5em;
     background-color: grey;
-    margin-right: 5px;
+    margin-right: 1.2vw;
 }
 
 input#buscador {
     width: 40vw;
-    border: 2px solid grey;
-    border-radius: 0.5em;
-    font-size: 15px;
-    margin-right: 5px;
-    padding: 0px 5px;
-    background-color: lightgrey;
+    margin-right: 1.1vw;
+    padding: 0vw 1.1vw;
 
 }
 
+input#buscador, select#opcionesFiltro {
+    border: 0.5vw solid grey;
+    border-radius: 0.5em;
+    font-size: 3.3vw;
+    background-color: lightgrey;
+}
+
 input#buscador:focus {
-    border: 3px solid grey;
+    border: 0.75vw solid grey;
 }
 
 select#opcionesFiltro {
     width: 25vw;
-    border: 2px solid grey;
-    font-size: 15px;
-    background-color: lightgrey;
-    border-radius: 0.5em;
-}
-
-@media (min-width: 495px) {
-    header {
-        background: linear-gradient(90deg, white 60%, rgba(128, 128, 128, 0.841) 100%) ;
-    }
-
-    div#buscadores {
-        height: 40px;
-    }
-
-    input#buscador, select#opcionesFiltro {
-        border: 3px solid grey;
-        transform: translateX(0px);
-        font-size: 20px;
-    }
-    
-    input#buscador {
-        width: 35vw;
-    }
-
-    select#opcionesFiltro{
-        width: 20vw;
-    }
-
-    input#buscador:focus {
-        border: 4px solid grey;
-    }
-}
-
-@media (min-width: 760px) {
-    header {
-        background: linear-gradient(90deg, white 40%, gray 100%) ;
-    }
-
-    div#buscadores {
-        height: 45px;
-    }
-
-    input#buscador, select#opcionesFiltro {
-        border: 4px solid grey;
-        font-size: 25px;
-    }
-    
-    input#buscador {
-        width: 30vw;
-    }
-    
-    select#opcionesFiltro{
-        width: 17vw;
-    }
-
-    input#buscador:focus {
-        border: 5px solid grey;
-    }
-}
-
-@media (min-width: 1080px) {
-    header {
-        background: linear-gradient(90deg, white 30%, gray 100%) ;
-    }
-
-    div#buscadores {
-        height: 50px;
-    }
-    
-    input#buscador, select#opcionesFiltro {
-        border: 5px solid grey;
-        font-size: 30px;
-    }
-
-    input#buscador:focus {
-        border: 6px solid grey;
-    }
-
-
-
-}
-
-#nBuscadosTitulo, #tBuscadosTitulo {
-    text-align: center;
-    background-color: rgba(0,0,0,0.7);
-}
-
-#nBuscados, #tBuscados {
-    color: rgb(0, 0, 0);
-    margin: 10px 103px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-}
-
-#btnBuscados, #btnLimpiar {
-    background-color: rgb(192,95,66);
-    font-size: 2em;
-    font-weight: bold;
-    padding: 0px 5px;
-    margin: 0px 10px;
-    border-radius: 0.2em;
-    box-shadow: -7px 5px 10px rgba(0,0,0); /*Horizontal offset | Vertical offset | Blur (difuminado) | Spread (tamaño)*/
-}
-
-#btnBuscados:hover, #btnLimpiar:hover {
-    background-color: rgb(193, 109, 83);
-}
-
-#resultados {
-    padding-top: 10px;
 }
 
 #container {
     color: rgb(0, 0, 0);
-    padding: 40px 0px 30px;
-    margin-bottom: 160px;
+    padding: 10vw 5vw;
+    margin-bottom: 22vw;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 1.5vw;
 }
 
-.card-pokemon {
-    display: none;
+.imagen-carga {
+    width: 70vw;
 }
+
+/*CARDS POKEMON*/
 
 .card {
     background-color: lightgray;
-    width: 35vw;
-    height: 14vh;
-    border: 3px solid transparent;
+    width: 29vw;
+    height: 29vw;
     border-radius: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .slide {
-    width: 35vw;
-    height: 14vh;
+    width: 29vw;
+    height: 29vw;
+    border-radius: 0.7rem;
 }
 
 .imagenCarrito {
-    width: 5.5vw;
+    width: 6vw;
+}
+
+.costados.derecha {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .slide0 {
-    height: 7vw;
-    visibility: hidden;
-    position: relative;
+    width: 27vw;
+    height: 27vw;
+    position: absolute;
     display: flex;
     flex-direction: row;
-    justify-content: end;
-    transform:translateY(21.7vw);
-
+    justify-content: space-between;
+    border: 1vw solid rgba(0, 0, 0, 0.399);
 }
 
 .slide1 {
-    font-size: 0.7em;
-    border: 4px solid rgba(0, 0, 0, 0.399);
-    border-radius: 0.7rem;
-    position: relative;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 1;
-    transform: translate(-4px, -32px)
 }
 
-.slide1.buscado {
-    transform: translate(-4px, -4px);
+.card-nombre {
+    font-size: 2.5vw;
+    padding-top: 1vw;
+}
+
+#imagen-pokemon {
+    height: 75%;
+    object-fit: contain;
+    object-position: center;
 }
 
 .slide2 {
-    border: 2px solid black;
+    border: 0.7vw solid black;
     border-radius: 0.7rem;
-    height: 13vh;
+    height: 30vw;
     font-weight: bold;
-    font-size: 0.7em;
+    font-size: 3.5vw;
     visibility: hidden;
     background-color: white;
     position: relative;
@@ -252,28 +155,32 @@ select#opcionesFiltro {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transform: translate(-2px, -150px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+    box-shadow: 0 5vw 10vw rgba(0,0,0,0.4);
+    transform: translateX(-0.7vw);
+}
+
+ul {
+    padding-left: 5vw;
 }
 
 .card:hover .slide.slide2 {
-    transform: translate(-4px, -30px);
-    transition: 0.3s;
+    transform: translate(-0.7vw, 36vw);
+    transition: 0.33s;
     visibility: visible;
     z-index: 3;
 }
 
-.card:hover .slide.slide0 {
-    visibility: visible;
-    z-index: 2;
-}
-
 .botonesEquipo {
-    margin: 2px;
-    width: 5.8vw;
     background-color: transparent;
     border: none;
+    height: 6vw;
     border-radius: 1em;
+    margin: 0vw 0.3vw 0.3vw 0vw;
+    z-index: -1;
+}
+
+.card:hover div.costados {
+    z-index: 3;
 }
 
 .botonesEquipo:hover {
@@ -284,43 +191,81 @@ select#opcionesFiltro {
     transform: scale(1.2);
 }
 
-.caracteristica {
-    width: 35vw;
+
+/*APARTADO DE RESULTADOS*/
+
+#nBuscadosTitulo, #tBuscadosTitulo {
+    text-align: center;
+    background-color: rgba(0,0,0,0.7);
 }
 
-ul {
-    padding-left: 17px;
-    
+#nBuscados, #tBuscados {
+    color: rgb(0, 0, 0);
+    margin: 2.5vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2.5vw;
 }
 
-/* h2 {
-    font-size: 30px;
-    margin-top: 8px
-} */
-
-.card-imagen {
-    height: 78%;
-    width: 78%;
+.card.resultado {
+    background-color: rgba(0,0,0,0.5);
+    color: white;
 }
 
-#imagen-pokemon {
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    object-position: center;
+
+#btnBuscados, #btnLimpiar, #btnStorage {
+    background-color: rgb(192,95,66);
+    width: 40vw;
+    font-size: 4.7vw;
+    font-weight: bold;
+    margin: 0vw 2.4vw;
+    border-radius: 0.8vw;
+    box-shadow: -1.75vw 1.2vw 2.5vw rgba(0,0,0); /*Horizontal offset | Vertical offset | Blur (difuminado) | Spread (tamaño)*/
 }
+
+.btns-resultados {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 1.2vw 0vw;
+}
+
+#btnBuscados:hover, #btnLimpiar:hover, #btnStorage:hover {
+    background-color: rgb(193, 109, 83);
+}
+
+.hidden {
+    visibility: hidden;
+}
+
+#resultados {
+    padding: 2.5vw 0vw;
+}
+
+/*SWAL*/
 
 .swal-modal {
-    width: 500px;
+    border: 0.75vw solid black;
+    width: 75vw;
+    justify-items: center;
 }
 
 .swal-text:first-child {
-    margin: 25px 0px;
+    margin: 6.25vw 0vw;
+}
+
+.swal-text:last-child {
+    margin: 2vw;
+    padding: 0vw;
 }
 
 .swal-text {
     font-size: 20px;
     font-weight: bold;
+    text-align: center;
+    margin-top: 16px;
 }
 
 .swal-icon.swal-icon--custom {
@@ -328,8 +273,8 @@ ul {
     background: linear-gradient(0deg, rgba(120,120,120,1) 0%, rgba(211,211,211,1) 100%);
 }
 
-.swal-icon.swal-icon--custom img {
-    width: 500;
+.swal-title:not(:last-child) {
+    margin: 0px;
 }
 
 .swal-title {
@@ -339,11 +284,12 @@ ul {
 }
 
 .swal-footer {
-    padding: 0px 0px 16px;
+    padding: 16px 0px;
     margin: 0px 16px;
     text-align: center;
 }
 
+/*COLOR DEL FONDO DE LAS TARJETAS*/
 
 .electrico {
     background-color: rgba(255, 210, 51, 0.500);
@@ -431,4 +377,205 @@ ul {
 
 .dragon.psiquico {
     background: linear-gradient(126deg, rgba(108,93,203,0.500) 0%, rgba(253,86,156,0.500) 100%);
+}
+
+/*MEDIA-QUERYs*/
+
+@media (min-width: 480px) {
+    header {
+        background: linear-gradient(90deg, white 70%, rgba(128, 128, 128, 0.841) 100%) ;
+    }
+
+    #imagenLogo {
+        height: 22vw;
+    }
+
+    .card, .slide {
+        width: 28vw;
+        height: 28vw;
+    }
+
+    .slide0 {
+        width: 26vw;
+        height: 26vw;
+    }
+
+    .card-nombre {
+        font-size: 2.2vw;
+        padding-top: 0.5vw;
+    }
+    
+    .imagenCarrito {
+        width: 4.5vw;
+    }
+
+    .botonesEquipo {
+        height: 4.5vw;
+    }
+
+    .card:hover .slide.slide2 {
+        transform: translate(-0.7vw, 28vw);
+    }
+
+    .slide2 {
+        font-size: 2.6vw;
+    }
+    
+    ul {
+        padding: 0vw 4vw;
+    }
+
+    .swal-modal {
+        width: 60vw;
+    }
+}
+
+@media (min-width: 768px) {
+    header {
+        background: linear-gradient(90deg, white 57%,  rgb(63, 63, 63) 100%) ;
+    }
+
+    #imagenLogo {
+        height: 18vw;
+    }
+
+    div#buscadores {
+        height: 6vw;
+    }
+
+    input#buscador {
+        width: 30vw;
+    }
+
+    select#opcionesFiltro {
+        width: 15vw;
+    }
+
+    input#buscador, select#opcionesFiltro {
+        font-size: 2.5vw;
+    }
+
+    #container {
+        padding-bottom: 0px;
+    }
+
+    .card, .slide {
+        width: 22vw;
+        height: 22vw;
+    }
+
+    .slide0 {
+        width: 20vw;
+        height: 20vw;
+    }
+
+    .card-nombre {
+        font-size: 1.8vw;
+        padding-top: 0.5vw;
+    }
+    
+    .imagenCarrito {
+        width: 4vw;
+    }
+
+    .botonesEquipo {
+        height: 4vw;
+    }
+
+    .card:hover .slide.slide2 {
+        transform: translate(-0.7vw, 22.5vw);
+    }
+
+    .slide2 {
+        height: 26vw;
+        font-size: 2.1vw;
+    }
+    
+    ul {
+        padding: 0vw 3.3vw;
+    }
+    
+    .swal-modal {
+        width: 50vw;
+    }
+
+    .swal-button {
+        font-size: 19px;
+    }
+
+    #btnBuscados, #btnLimpiar, #btnStorage {
+        width: 30vw;
+        font-size: 3vw;
+    }
+}
+
+@media (min-width: 1024px) {
+    header {
+        background: linear-gradient(90deg, white 50%, rgb(63, 63, 63) 100%) ;
+    }
+
+    main {
+        padding-top: 35vw;
+    }
+
+    #container {
+        gap: 1.5vw;
+    }
+
+    #imagenLogo {
+        height: 15vw;
+    }
+
+    div#buscadores {
+        height: 6vw;
+    }
+
+    .card, .slide {
+        width: 18vw;
+        height: 20vw;
+    }
+
+    .slide0 {
+        width: 16vw;
+        height: 18vw;
+    }
+
+    .card-nombre {
+        font-size: 1.4vw;
+        padding-top: 1vw;
+    }
+    
+    .imagenCarrito {
+        width: 4.5vw;
+    }
+
+    .botonesEquipo {
+        height: 4.5vw;
+    }
+
+    .card:hover .slide.slide2 {
+        transform: translate(-0.7vw, 29vw);
+    }
+
+    .slide2 {
+        height: 26vw;
+        font-size: 2.6vw;
+    }
+    
+    ul {
+        padding: 0vw 3.3vw;
+    }
+    
+    .swal-modal {
+        width: 50vw;
+    }
+
+    .swal-footer {
+        padding: 16px 0px;
+    }
+
+    .swal-button {
+        font-size: 19px;
+    }
+
 }

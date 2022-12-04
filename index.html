@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/estilos.css">
     <link rel="icon" href="./Imagenes/pokebola.png">
-    <script defer src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script defer src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script defer src="./archivosJS/pokemones.js"></script>
     <script defer src="./archivosJS/index.js"></script>
@@ -31,8 +30,10 @@
         <div id="container">
         </div>
         <div id="resultados">
-            <button id="btnBuscados">Mostrar buscados</button>
-            <button id="btnLimpiar">Limpiar resultados de búsqueda</button>
+            <div class="btns-resultados">
+                <button id="btnBuscados">Mostrar buscados</button>
+                <button id="btnStorage" class="hidden">Limpiar historial</button>
+            </div>
             <div>
                 <div id="nBuscadosTitulo"></div>
                 <div id="nBuscados"></div>
@@ -41,6 +42,7 @@
                 <div id="tBuscadosTitulo"></div>
                 <div id="tBuscados"></div>
             </div>
+            <button id="btnLimpiar" class="hidden">Ocultar buscados</button>
         </div>
     </main>
 </body>
