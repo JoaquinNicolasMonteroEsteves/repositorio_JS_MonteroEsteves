@@ -439,6 +439,10 @@ ul {
         padding-top: 26vw;
     }
 
+    #container {
+        padding-top: 5vw;
+    }
+
     #imagenLogo {
         height: 18vw;
     }
