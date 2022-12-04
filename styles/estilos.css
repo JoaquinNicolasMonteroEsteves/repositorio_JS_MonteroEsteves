@@ -491,7 +491,7 @@ ul {
     }
 
     .card:hover .slide.slide2 {
-        transform: translate(-0.7vw, 22.5vw);
+        transform: translate(-0.7vw, 21.5vw);
     }
 
     .slide2 {
