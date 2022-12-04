@@ -51,6 +51,17 @@ let capitalize = (x) => {
     return (letraInicial.toUpperCase() + resto)
 }
 
+let btnInteraccion = document.querySelectorAll("button.botonesEquipo")
+
+let interaccionPokemon = () => {
+    btnInteraccion.forEach(btn => {
+        btn.addEventListener("click", () => {
+            let encontrado = pokemones.find(pokemon => pokemon.id === parseInt(btn.id))
+            alertaMolestado(encontrado)
+        })
+    })
+}
+
 let cargarPokemones = (array) => {
     let contenido = ""
         if(array.length > 0) {
@@ -58,11 +69,12 @@ let cargarPokemones = (array) => {
                 contenido += cardPokemon(pokemon)
             })
             container.innerHTML = contenido
+            btnInteraccion = document.querySelectorAll("button.botonesEquipo")
+            interaccionPokemon()
         }
 }
 cargarPokemones(pokemones)
 
-let btnInteraccion = document.querySelectorAll("button.botonesEquipo")
 
 let cargarPokemonesBuscados = (array, banner, elemento, filtro) => {
     let titulo = ""
@@ -112,7 +124,6 @@ let mostrarFiltradoNombre = () => {
         setTimeout(() => {
             cargarPokemones(resultado)
         }, parseInt(resultado.length)*350)
-        btnInteraccion = document.querySelectorAll("button.botonesEquipo")
         mostrarBtnLimpiarStorage()
     } else {
         alertaBuscador(1)
@@ -132,14 +143,13 @@ let mostrarFiltradosTipo = () => {
         setTimeout(() => {
             cargarPokemones(resultado)
         }, parseInt(resultado.length)*350)
-        btnInteraccion = document.querySelectorAll("button.botonesEquipo")
         mostrarBtnLimpiarStorage()
     } else {
         alertaBuscador(1)
     }
 }
 
-let filtrarPokemonesNombre = () => {
+let filtrarPokemones = () => {
         if (inputBuscador.value.trim() !== "" && opcionesFiltro.value === "nombre") {
             mostrarFiltradoNombre()
         } else if (inputBuscador.value.trim() !== "" && opcionesFiltro.value === "bTipo") {
@@ -155,7 +165,7 @@ let filtrarPokemonesNombre = () => {
         interaccionPokemon()
         limpiarBuscados()
 }
-inputBuscador.addEventListener("search", filtrarPokemonesNombre)
+inputBuscador.addEventListener("search", filtrarPokemones)
 
 let mostrarBuscados = () => {
     if((sessionStorage.getItem("Buscados-Nombre")) || (sessionStorage.getItem("Buscados-Tipo")) !== null) {
@@ -188,16 +198,6 @@ let mostrarBtnLimpiarStorage = () => {
     }
 }
 mostrarBtnLimpiarStorage()
-
-let interaccionPokemon = () => {
-    btnInteraccion.forEach(btn => {
-        btn.addEventListener("click", () => {
-            let encontrado = pokemones.find(pokemon => pokemon.id === parseInt(btn.id))
-            alertaMolestado(encontrado)
-        })
-    })
-}
-interaccionPokemon()
 
 let alertaMolestado = (x) => {
     swal("Acabás de molestar a " + capitalize(x.nombre), "", "./Imagenes/" + capitalize(x.nombre) + ".png", {
