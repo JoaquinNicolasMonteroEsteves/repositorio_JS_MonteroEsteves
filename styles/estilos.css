@@ -435,6 +435,10 @@ ul {
         background: linear-gradient(90deg, white 57%,  rgb(63, 63, 63) 100%) ;
     }
 
+    main {
+        padding-top: 26vw;
+    }
+
     #imagenLogo {
         height: 18vw;
     }
@@ -460,26 +464,26 @@ ul {
     }
 
     .card, .slide {
-        width: 22vw;
-        height: 22vw;
+        width: 21vw;
+        height: 21vw;
     }
 
     .slide0 {
-        width: 20vw;
-        height: 20vw;
+        width: 19vw;
+        height: 19vw;
     }
 
     .card-nombre {
-        font-size: 1.8vw;
+        font-size: 1.7vw;
         padding-top: 0.5vw;
     }
     
     .imagenCarrito {
-        width: 4vw;
+        width: 3.5vw;
     }
 
     .botonesEquipo {
-        height: 4vw;
+        height: 3.5vw;
     }
 
     .card:hover .slide.slide2 {
