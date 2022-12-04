@@ -104,10 +104,6 @@ select#opcionesFiltro {
     border-radius: 0.7rem;
 }
 
-.imagenCarrito {
-    width: 6vw;
-}
-
 .costados.derecha {
     display: flex;
     flex-direction: column;
@@ -147,7 +143,7 @@ select#opcionesFiltro {
     border-radius: 0.7rem;
     height: 30vw;
     font-weight: bold;
-    font-size: 3.5vw;
+    font-size: 3vw;
     visibility: hidden;
     background-color: white;
     position: relative;
@@ -164,16 +160,20 @@ ul {
 }
 
 .card:hover .slide.slide2 {
-    transform: translate(-0.7vw, 36vw);
+    transform: translate(-0.7vw, 29.5vw);
     transition: 0.33s;
     visibility: visible;
     z-index: 3;
 }
 
+.imagenCarrito {
+    width: 5vw;
+}
+
 .botonesEquipo {
     background-color: transparent;
     border: none;
-    height: 6vw;
+    height: 5vw;
     border-radius: 1em;
     margin: 0vw 0.3vw 0.3vw 0vw;
     z-index: -1;
