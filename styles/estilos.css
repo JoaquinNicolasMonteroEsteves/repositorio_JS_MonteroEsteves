@@ -49,6 +49,14 @@ img#imagenLupa {
     margin-right: 1.2vw;
 }
 
+img#imagenLupa:hover {
+    cursor: pointer;
+}
+
+img#imagenLupa:active {
+    transform: scale(1.1);
+}
+
 input#buscador {
     width: 40vw;
     margin-right: 1.1vw;
@@ -205,7 +213,7 @@ ul {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2.5vw;
+    gap: 1.5vw;
 }
 
 .card.resultado {
@@ -351,7 +359,143 @@ ul {
 }
 
 .hielo {
-    background-color: rgb(120, 222, 255, 0.500);
+    background-color: rgba(120, 222, 255, 0.500);
+}
+
+.bicho {
+    background-color: rgba(171,188,28,0.5);
+}
+
+.volador {
+    background-color: rgba(105,159,255,0.5);
+}
+
+.psiquico.hoja {
+    background: linear-gradient(126deg, rgba(253, 86, 156, 0.500) 0%, rgba(0, 128, 0, 0.500) 100%)
+}
+
+.electrico.acero {
+    background: linear-gradient(126deg, rgba(255, 210, 51, 0.500) 0%, rgb(169, 169, 187, 0.500) 100%)
+}
+
+.veneno.lucha {
+    background: linear-gradient(126deg, rgba(156, 66, 140, 0.500) 0%, rgb(194, 87, 69, 0.500) 100%)
+}
+
+.lucha.psiquico {
+    background: linear-gradient(126deg, rgb(194, 87, 69, 0.500) 0%, rgba(253, 86, 156, 0.500) 100%)
+}
+
+.agua.siniestro {
+    background: linear-gradient(126deg, rgba(173, 216, 230, 0.5) 0%, rgb(120, 84, 66, 0.500)  100%)
+}
+
+.siniestro.fuego {
+    background: linear-gradient(126deg, rgb(120, 84, 66, 0.500) 0%, rgba(255, 66, 28, 0.500) 100%);
+}
+
+.siniestro.hielo {
+    background: linear-gradient(126deg, rgb(120, 84, 66, 0.500) 0%, rgba(120, 222, 255, 0.500) 100%)
+}
+
+.hielo.bicho {
+    background: linear-gradient(126deg, rgba(120, 222, 255, 0.500) 0%, rgba(171,188,28,0.5) 100%)
+}
+
+.bicho.agua {
+    background: linear-gradient(126deg, rgba(171,188,28,0.5) 0%, rgba(173, 216, 230, 0.5) 100%)
+}
+
+.bicho.hada {
+    background: linear-gradient(126deg, rgba(171,188,28,0.5) 0%, rgb(255, 172, 255, 0.500) 100%)
+}
+
+.bicho.fuego {
+    background: linear-gradient(126deg, rgba(171,188,28,0.5) 0%, rgba(255, 66, 28, 0.500) 100%);
+}
+
+.bicho.electrico {
+    background: linear-gradient(126deg, rgba(171,188,28,0.5) 0%, rgba(255, 210, 51, 0.500) 100%);
+}
+
+.bicho.veneno {
+    background: linear-gradient(126deg, rgba(171,188,28,0.5) 0%, rgba(156, 66, 140, 0.500) 100%)
+}
+
+.bicho.lucha {
+    background: linear-gradient(126deg, rgba(171,188,28,0.5) 0%, rgb(194, 87, 69, 0.500) 100%);
+}
+
+.bicho.hoja {
+    background: linear-gradient(126deg, rgba(171,188,28,0.5) 0%, rgba(0, 128, 0, 0.500) 100%)
+}
+
+.hoja.volador {
+    background: linear-gradient(126deg, rgba(0, 128, 0, 0.500) 0%, rgba(105,159,255,0.5) 100%)
+}
+
+.roca.agua {
+    background: linear-gradient(126deg, rgb(188, 172, 102, 0.500) 0%, rgba(173, 216, 230, 0.5) 100%);
+}
+
+.fantasma.hoja {
+    background: linear-gradient(126deg, rgb(75, 75, 159, 0.500) 0%, rgba(0, 128, 0, 0.500) 100%);
+}
+
+.hielo.psiquico {
+    background: linear-gradient(126deg, rgb(120, 222, 255, 0.500) 0%, rgba(253, 86, 156, 0.500) 100%);
+}
+
+.psiquico.normal {
+    background: linear-gradient(126deg, rgba(253, 86, 156, 0.500) 0%, rgb(185, 182, 168, 0.500) 100%);
+}
+
+.agua.hielo {
+    background:  linear-gradient(126deg, rgba(173, 216, 230, 0.5) 0%, rgb(120, 222, 255, 0.500) 100%);
+}
+
+.lucha.fantasma {
+    background: linear-gradient(126deg, rgb(194, 87, 69, 0.500) 0%, rgb(75, 75, 159, 0.500) 100%);
+}
+
+.veneno.fuego {
+    background: linear-gradient(126deg, rgba(156, 66, 140, 0.500) 0%, rgba(255, 66, 28, 0.500) 100%);
+}
+
+.acero.psiquico {
+    background: linear-gradient(126deg, rgba(169,169,187,0.6) 0%, rgba(253, 86, 156, 0.500) 100%);
+}
+
+.electrico.veneno {
+    background: linear-gradient(126deg, rgba(255, 210, 51, 0.500) 0%, rgba(156, 66, 140, 0.500) 100%);
+}
+
+.acero.fantasma {
+    background: linear-gradient(126deg, rgba(169,169,187,0.6) 0%, rgb(75, 75, 159, 0.500) 100%);
+}
+
+.psiquico.hada {
+    background: linear-gradient(126deg, rgba(253, 86, 156, 0.500) 0%, rgb(255, 172, 255, 0.500) 100%);
+}
+
+.fantasma.volador {
+    background: linear-gradient(126deg, rgb(75, 75, 159, 0.500) 0%, rgba(105,159,255,0.5) 100%);
+}
+
+.tierra.fantasma {
+    background: linear-gradient(126deg, rgb(221, 187, 84, 0.500) 0%, rgb(75, 75, 159, 0.500) 100%);
+}
+
+.tierra.siniestro {
+    background: linear-gradient(126deg, rgb(221, 187, 84, 0.500) 0%, rgb(120, 84, 66, 0.500) 100%);
+}
+
+.fantasma.veneno {
+    background: linear-gradient(126deg, rgb(75, 75, 159, 0.500) 0%, rgba(156, 66, 140, 0.500) 100%);
+}
+
+.hoja.veneno {
+    background: linear-gradient(126deg, rgba(0, 128, 0, 0.500) 0%, rgba(156, 66, 140, 0.500) 100%);
 }
 
 .acero.roca {
@@ -363,15 +507,19 @@ ul {
 }
 
 .fantasma.fuego {
-    background: linear-gradient(126deg, rgba(75,75,159,0.5) 0%, rgba(255,66,28,0.5) 100%);;
+    background: linear-gradient(126deg, rgba(75,75,159,0.5) 0%, rgba(255,66,28,0.5) 100%);
 }
 
 .bicho.volador {
-    background: linear-gradient(126deg, rgba(171,188,28,0.5) 0%, rgba(105,159,255,0.5) 100%);;
+    background: linear-gradient(126deg, rgba(171,188,28,0.5) 0%, rgba(105,159,255,0.5) 100%);
 }
 
 .volador.normal {
-    background: linear-gradient(126deg, rgba(105,159,255,1) 0%, rgba(185,182,168,0.5) 100%);;
+    background: linear-gradient(126deg, rgba(105,159,255,1) 0%, rgba(185,182,168,0.5) 100%);
+}
+
+.dragon.volador {
+    background: linear-gradient(126deg, rgba(108,93,203,0.500) 0%, rgba(105,159,255,0.5) 100%);
 }
 
 .dragon.psiquico {
@@ -470,34 +618,34 @@ ul {
     }
 
     .card, .slide {
-        width: 21vw;
-        height: 21vw;
-    }
-
-    .slide0 {
         width: 19vw;
         height: 19vw;
     }
 
+    .slide0 {
+        width: 17vw;
+        height: 17vw;
+    }
+
     .card-nombre {
-        font-size: 1.7vw;
+        font-size: 1.5vw;
         padding-top: 0.5vw;
     }
     
     .imagenCarrito {
-        width: 3.5vw;
+        width: 3.1vw;
     }
 
     .botonesEquipo {
-        height: 3.5vw;
+        height: 3.1vw;
     }
 
     .card:hover .slide.slide2 {
-        transform: translate(-0.7vw, 21.5vw);
+        transform: translate(-0.7vw, 19.5vw);
     }
 
     .slide2 {
-        height: 26vw;
+        height: 23vw;
         font-size: 1.8vw;
     }
     

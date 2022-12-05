@@ -1,4 +1,5 @@
 const container = document.getElementById("container")
+const imagenLupa = document.getElementById("imagenLupa")
 const inputBuscador = document.getElementById("buscador")
 const opcionesFiltro = document.getElementById("opcionesFiltro")
 const ntitulo = document.getElementById("nBuscadosTitulo")
@@ -8,6 +9,17 @@ const tcontainer = document.getElementById("tBuscados")
 const btnBuscados = document.getElementById("btnBuscados")
 const btnStorage = document.getElementById("btnStorage")
 const btnLimpiar = document.getElementById("btnLimpiar")
+const buscadosNombre = []
+const buscadosTipo = []
+const equipo = []
+const pokemones = []
+const URL = './baseDatos/pokemones.json'
+
+fetch(URL)
+    .then((response) => data = response.json())
+    .then((data) => pokemones.push(...data))
+    .then(() => cargarPokemones(pokemones))
+    .catch(error => container.innerHTML = swal("No se pudieron cargar correctamente los Pokemones", "Chequee la conexión con la base de datos", './Imagenes/errorCarga.gif', {buttons: {confirm: "Aceptar"}}))
 
 
 let cardPokemon = (pokemon) => {
@@ -17,7 +29,7 @@ let cardPokemon = (pokemon) => {
                         <img src="./Imagenes/pokebolaVacia.png" class="imagenCarrito">
                     </div>
                     <div class="costados derecha">
-                        <button type="button" class="botonesEquipo" id="${pokemon.id}"><img src="./Imagenes/pokebola.png" class="imagenCarrito"></button>
+                        <button type="button" class="botonesEquipo" id="${pokemon.nombre}"><img src="./Imagenes/pokebola.png" class="imagenCarrito"></button>
                     </div>
                 </div>
                 <div class="slide slide1 ${pokemon.bTipo}" id="card${pokemon.id}">
@@ -38,7 +50,7 @@ let cardPokemon = (pokemon) => {
 
 let cardPokemonBuscado = (pokemon) => {
     return `<div class="card resultado">
-                <div class="slide slide1 ${pokemon.bTipo}" id="card${pokemon.id}">
+                <div class="slide slide1 ${pokemon.bTipo}" id="card${pokemon.nombre}">
                     <div class="card-nombre"><h2>${capitalize(pokemon.nombre)}</h2></div>
                     <img id="imagen-pokemon" src=${pokemon.imagen}>
                 </div>    
@@ -56,7 +68,7 @@ let btnInteraccion = document.querySelectorAll("button.botonesEquipo")
 let interaccionPokemon = () => {
     btnInteraccion.forEach(btn => {
         btn.addEventListener("click", () => {
-            let encontrado = pokemones.find(pokemon => pokemon.id === parseInt(btn.id))
+            let encontrado = pokemones.find(pokemon => pokemon.nombre === btn.id)
             alertaMolestado(encontrado)
         })
     })
@@ -73,8 +85,6 @@ let cargarPokemones = (array) => {
             interaccionPokemon()
         }
 }
-cargarPokemones(pokemones)
-
 
 let cargarPokemonesBuscados = (array, banner, elemento, filtro) => {
     let titulo = ""
@@ -123,7 +133,7 @@ let mostrarFiltradoNombre = () => {
         container.innerHTML = `<img src="./Imagenes/EsperaPokeballNegroYBlancoNF.gif" class="imagen-carga">`
         setTimeout(() => {
             cargarPokemones(resultado)
-        }, parseInt(resultado.length)*350)
+        }, parseInt(resultado.length)*200)
         mostrarBtnLimpiarStorage()
     } else {
         alertaBuscador(1)
@@ -142,7 +152,7 @@ let mostrarFiltradosTipo = () => {
         container.innerHTML = `<img src="./Imagenes/EsperaPokeballNegroYBlancoNF.gif" class="imagen-carga">`
         setTimeout(() => {
             cargarPokemones(resultado)
-        }, parseInt(resultado.length)*350)
+        }, parseInt(resultado.length)*200)
         mostrarBtnLimpiarStorage()
     } else {
         alertaBuscador(1)
@@ -166,6 +176,7 @@ let filtrarPokemones = () => {
         limpiarBuscados()
 }
 inputBuscador.addEventListener("search", filtrarPokemones)
+imagenLupa.addEventListener("click", filtrarPokemones)
 
 let mostrarBuscados = () => {
     if((sessionStorage.getItem("Buscados-Nombre")) || (sessionStorage.getItem("Buscados-Tipo")) !== null) {

@@ -1,0 +1,674 @@
+[
+    {
+        "nombre": "pikachu",
+        "imagen": "./Imagenes/Pikachu.png",
+        "bTipo": "electrico",
+        "tipo": "Eléctrico",
+        "ataqueFavorito": "Impactrueno",
+        "evolucion": "Raichu"
+    },
+    {
+        "nombre": "charmander",
+        "imagen": "./Imagenes/Charmander.png",
+        "bTipo": "fuego",
+        "tipo": "Fuego",
+        "ataqueFavorito": "Lanzallamas",
+        "evolucion": "Charmeleon y Charizard"
+    },
+    {
+        "nombre": "bulbasaur",
+        "imagen": "./Imagenes/Bulbasaur.png",
+        "bTipo": "hoja veneno",
+        "tipo": "Hoja/Veneno",
+        "ataqueFavorito": "Látigo cepa",
+        "evolucion": "Ivysaur y Venasaur"
+    },
+    {
+        "nombre": "squirtle",
+        "imagen": "./Imagenes/Squirtle.png",
+        "bTipo": "agua",
+        "tipo": "Agua",
+        "ataqueFavorito": "Hidrobomba",
+        "evolucion": "Wartortle y Blastoise"
+    },
+    {
+        "nombre": "bagon",
+        "imagen": "./Imagenes/Bagon.png",
+        "bTipo": "dragon",
+        "tipo": "Dragón",
+        "ataqueFavorito": "Garra Dragón",
+        "evolucion": "Shelgon y Salamance"
+    },
+    {
+        "nombre": "torchic",
+        "imagen": "./Imagenes/Torchic.png",
+        "bTipo": "fuego",
+        "tipo": "Fuego",
+        "ataqueFavorito": "Arañazo",
+        "evolucion": "Combusken y Blaiziken"
+    },
+    {
+        "nombre": "ekans",
+        "imagen": "./Imagenes/Ekans.png",
+        "bTipo": "veneno",
+        "tipo": "Veneno",
+        "ataqueFavorito": "Restricción",
+        "evolucion": "Arbok"
+    },
+    {
+        "nombre": "dratini",
+        "imagen": "./Imagenes/Dratini.png",
+        "bTipo": "dragon",
+        "tipo": "Dragón",
+        "ataqueFavorito": "Dragoaliento",
+        "evolucion": "Dragonair y Dragonite"
+    },
+    {
+        "nombre": "magikarp",
+        "imagen": "./Imagenes/Magikarp.png",
+        "bTipo": "agua",
+        "tipo": "Agua",
+        "ataqueFavorito": "Salpicadura",
+        "evolucion": "Gyarados"
+    },
+    {
+        "nombre": "abra",
+        "imagen": "./Imagenes/Abra.png",
+        "bTipo": "psiquico",
+        "tipo": "Psíquico",
+        "ataqueFavorito": "Teletransporte",
+        "evolucion": "Kadabra y Alakazam"
+    },
+    {
+        "nombre": "porygon",
+        "imagen": "./Imagenes/Porygon.png",
+        "bTipo": "normal",
+        "tipo": "Normal",
+        "ataqueFavorito": "Hiperrayo",
+        "evolucion": "Porygon2 y Porygon-Z"
+    },
+    {
+        "nombre": "horsea",
+        "imagen": "./Imagenes/Horsea.png",
+        "bTipo": "agua",
+        "tipo": "Agua",
+        "ataqueFavorito": "Rayo burbuja",
+        "evolucion": "Kingdra"
+    },
+    {
+        "nombre": "sudowoodo",
+        "imagen": "./Imagenes/Sudowoodo.png",
+        "bTipo": "roca",
+        "tipo": "Roca",
+        "ataqueFavorito": "Avalancha",
+        "evolucion": "No tiene"
+    },
+    {
+        "nombre": "aron",
+        "imagen": "./Imagenes/Aron.png",
+        "bTipo": "acero roca",
+        "tipo": "Acero/Roca",
+        "ataqueFavorito": "Garra metal",
+        "evolucion": "Lairon y Aggron"
+    },
+    {
+        "nombre": "togepi",
+        "imagen": "./Imagenes/Togepi.png",
+        "bTipo": "hada",
+        "tipo": "Hada",
+        "ataqueFavorito": "Fuerza Lunar",
+        "evolucion": "Togetic y Togekiss"
+    },
+    {
+        "nombre": "riolu",
+        "imagen": "./Imagenes/Riolu.png",
+        "bTipo": "lucha",
+        "tipo": "Lucha",
+        "ataqueFavorito": "Onda vacío",
+        "evolucion": "Lucario"
+    },
+    {
+        "nombre": "zorua",
+        "imagen": "./Imagenes/Zorua.png",
+        "bTipo": "siniestro",
+        "tipo": "Siniestro",
+        "ataqueFavorito": "Pulso Noche",
+        "evolucion": "Zoroark"
+    },
+    {
+        "nombre": "pawniard",
+        "imagen": "./Imagenes/Pawniard.png",
+        "bTipo": "siniestro acero",
+        "tipo": "Siniestro/Acero",
+        "ataqueFavorito": "Gillotina",
+        "evolucion": "Bisharp y Kingambit"
+    },
+    {
+        "nombre": "gastly",
+        "imagen": "./Imagenes/Gastly.png",
+        "bTipo": "fantasma veneno",
+        "tipo": "Fantasma/Veneno",
+        "ataqueFavorito": "Lengüetazo",
+        "evolucion": "Hunter y Gengar"
+    },
+    {
+        "nombre": "litwick",
+        "imagen": "./Imagenes/Litwick.png",
+        "bTipo": "fantasma fuego",
+        "tipo": "Fantasma/Fuego",
+        "ataqueFavorito": "Fuego fatuo",
+        "evolucion": "Lampent y Chandelure"
+    },
+    {
+        "nombre": "scyther",
+        "imagen": "./Imagenes/Scyther.png",
+        "bTipo": "bicho volador",
+        "tipo": "Bicho/Volador",
+        "ataqueFavorito": "Tijera X",
+        "evolucion": "Scizor o Kleavor"
+    },
+    {
+        "nombre": "swablu",
+        "imagen": "./Imagenes/Swablu.png",
+        "bTipo": "volador normal",
+        "tipo": "Volador/Normal",
+        "ataqueFavorito": "Canto",
+        "evolucion": "Altaria"
+    },
+    {
+        "nombre": "cubone",
+        "imagen": "./Imagenes/Cubone.png",
+        "bTipo": "tierra",
+        "tipo": "Tierra",
+        "ataqueFavorito": "Huesomerang",
+        "evolucion": "Marowak"
+    },
+    {
+        "nombre": "snorunt",
+        "imagen": "./Imagenes/Snorunt.png",
+        "bTipo": "hielo",
+        "tipo": "Hielo",
+        "ataqueFavorito": "Colmillo hielo",
+        "evolucion": "Glalie o Froslass(♀️)"
+    },
+    {
+        "nombre": "cufant",
+        "imagen": "./Imagenes/Cufant.png",
+        "bTipo": "acero",
+        "tipo": "Acero",
+        "ataqueFavorito": "Cabeza de hierro",
+        "evolucion": "Copperajah"
+    },
+    {
+        "nombre": "budew",
+        "imagen": "./Imagenes/Budew.png",
+        "bTipo": "hoja veneno",
+        "tipo": "Hoja/Veneno",
+        "ataqueFavorito": "Polvo veneno",
+        "evolucion": "Roselia y Roserade"
+    },
+    {
+        "nombre": "grubbin",
+        "imagen": "./Imagenes/Grubbin.png",
+        "bTipo": "bicho",
+        "tipo": "Bicho",
+        "ataqueFavorito": "Picadura",
+        "evolucion": "Charjabug y Vikavolt"
+    },
+    {
+        "nombre": "rockruff",
+        "imagen": "./Imagenes/Rockruff.png",
+        "bTipo": "roca",
+        "tipo": "Roca",
+        "ataqueFavorito": "Tumba roca",
+        "evolucion": "Lycanroc☀️🌙🌅"
+    },
+    {
+        "nombre": "wooloo",
+        "imagen": "./Imagenes/Wooloo.png",
+        "bTipo": "normal",
+        "tipo": "Normal",
+        "ataqueFavorito": "Golpe cabeza",
+        "evolucion": "Dubwool"
+    },
+    {
+        "nombre": "sandile",
+        "imagen": "./Imagenes/Sandile.png",
+        "bTipo": "tierra siniestro",
+        "tipo": "Tierra/Siniestro",
+        "ataqueFavorito": "Mordisco",
+        "evolucion": "Krokorok y Krookodile"
+    },
+    {
+        "nombre": "golett",
+        "imagen": "./Imagenes/Golett.png",
+        "bTipo": "tierra fantasma",
+        "tipo": "Tierra/Fantasma",
+        "ataqueFavorito": "Puño sombra",
+        "evolucion": "Golurk"
+    },
+    {
+        "nombre": "pancham",
+        "imagen": "./Imagenes/Pancham.png",
+        "bTipo": "lucha",
+        "tipo": "Lucha",
+        "ataqueFavorito": "Llave giro",
+        "evolucion": "Pangoro"
+    },
+    {
+        "nombre": "clobbopus",
+        "imagen": "./Imagenes/Clobbopus.png",
+        "bTipo": "lucha",
+        "tipo": "Lucha",
+        "ataqueFavorito": "Sumisión",
+        "evolucion": "Grapploct"
+    },
+    {
+        "nombre": "joltik",
+        "imagen": "./Imagenes/Joltik.png",
+        "bTipo": "bicho electrico",
+        "tipo": "Bicho/Eléctrico",
+        "ataqueFavorito": "Electrotela",
+        "evolucion": "Galvantula"
+    },
+    {
+        "nombre": "drifloon",
+        "imagen": "./Imagenes/Drifloon.png",
+        "bTipo": "fantasma volador",
+        "tipo": "Fantasma/Volador",
+        "ataqueFavorito": "Tornado",
+        "evolucion": "Drifblim"
+    },
+    {
+        "nombre": "elekid",
+        "imagen": "./Imagenes/Elekid.png",
+        "bTipo": "electrico",
+        "tipo": "Eléctrico",
+        "ataqueFavorito": "Puño trueno",
+        "evolucion": "Electabuzz y Electivire"
+    },
+    {
+        "nombre": "shellos",
+        "imagen": "./Imagenes/Shellos.png",
+        "bTipo": "agua",
+        "tipo": "Agua",
+        "ataqueFavorito": "Hidropulso",
+        "evolucion": "Gastrodon"
+    },
+    {
+        "nombre": "happiny",
+        "imagen": "./Imagenes/Happiny.png",
+        "bTipo": "normal",
+        "tipo": "Normal",
+        "ataqueFavorito": "Beso dulce",
+        "evolucion": "Chansey y Blissey"
+    },
+    {
+        "nombre": "ralts",
+        "imagen": "./Imagenes/Ralts.png",
+        "bTipo": "psiquico hada",
+        "tipo": "Psíquico/Hada",
+        "ataqueFavorito": "Confusión",
+        "evolucion": "Kirlia y Gardevoir (♀️) o Gallade (♂️)"
+    },
+    {
+        "nombre": "paras",
+        "imagen": "./Imagenes/Paras.png",
+        "bTipo": "bicho hoja",
+        "tipo": "Bicho/Hoja",
+        "ataqueFavorito": "Carga tóxica",
+        "evolucion": "Parasect"
+    },
+    {
+        "nombre": "honedge",
+        "imagen": "./Imagenes/Honedge.png",
+        "bTipo": "acero fantasma",
+        "tipo": "Acero/Fantasma",
+        "ataqueFavorito": "Eco metálico",
+        "evolucion": "Doublade y Aegislash"
+    },
+    {
+        "nombre": "jangmo-o",
+        "imagen": "./Imagenes/Jangmo-o.png",
+        "bTipo": "dragon",
+        "tipo": "Dragón",
+        "ataqueFavorito": "Garra dragón",
+        "evolucion": "Hakamo-o y Kommo-o"
+    },
+    {
+        "nombre": "toxel",
+        "imagen": "./Imagenes/Toxel.png",
+        "bTipo": "electrico veneno",
+        "tipo": "Eléctrico/Veneno",
+        "ataqueFavorito": "Moflete estático",
+        "evolucion": "Toxtricity (agudo o grave)"
+    },
+    {
+        "nombre": "wimpod",
+        "imagen": "./Imagenes/Wimpod.png",
+        "bTipo": "bicho agua",
+        "tipo": "Bicho/Agua",
+        "ataqueFavorito": "Estoicismo",
+        "evolucion": "Golisopod"
+    },
+    {
+        "nombre": "shinx",
+        "imagen": "./Imagenes/Shinx.png",
+        "bTipo": "electrico",
+        "tipo": "Eléctrico",
+        "ataqueFavorito": "Carga",
+        "evolucion": "Luxio y Luxray"
+    },
+    {
+        "nombre": "beldum",
+        "imagen": "./Imagenes/Beldum.png",
+        "bTipo": "acero psiquico",
+        "tipo": "Acero/Psíquico",
+        "ataqueFavorito": "Derribo",
+        "evolucion": "Metang y Metagross"
+    },
+    {
+        "nombre": "rookidee",
+        "imagen": "./Imagenes/Rookidee.png",
+        "bTipo": "volador",
+        "tipo": "Volador",
+        "ataqueFavorito": "Picotazo",
+        "evolucion": "Corvisquire y Corviknight"
+    },
+    {
+        "nombre": "salandit",
+        "imagen": "./Imagenes/Salandit.png",
+        "bTipo": "veneno fuego",
+        "tipo": "Veneno/Fuego",
+        "ataqueFavorito": "Colmillo venenoso",
+        "evolucion": "Salazzle (♀️)"
+    },
+    {
+        "nombre": "heracross",
+        "imagen": "./Imagenes/Heracross.png",
+        "bTipo": "bicho lucha",
+        "tipo": "Bicho/Lucha",
+        "ataqueFavorito": "Megacuerno",
+        "evolucion": "No tiene"
+    },
+    {
+        "nombre": "marshadow",
+        "imagen": "./Imagenes/Marshadow.png",
+        "bTipo": "lucha fantasma",
+        "tipo": "Lucha/Fantasma",
+        "ataqueFavorito": "Puño drenaje",
+        "evolucion": "No tiene"
+    },
+    {
+        "nombre": "lapras",
+        "imagen": "./Imagenes/Lapras.png",
+        "bTipo": "agua hielo",
+        "tipo": "Agua/Hielo",
+        "ataqueFavorito": "Canto helado",
+        "evolucion": "No tiene"
+    },
+    {
+        "nombre": "sunkern",
+        "imagen": "./Imagenes/Sunkern.png",
+        "bTipo": "hoja",
+        "tipo": "Hoja",
+        "ataqueFavorito": "Absorber",
+        "evolucion": "Sunflora"
+    },
+    {
+        "nombre": "cutiefly",
+        "imagen": "./Imagenes/Cutiefly.png",
+        "bTipo": "bicho hada",
+        "tipo": "Bicho/Hada",
+        "ataqueFavorito": "Beso drenaje",
+        "evolucion": "Ribombee"
+    },
+    {
+        "nombre": "unown",
+        "imagen": "./Imagenes/Unown.png",
+        "bTipo": "psiquico",
+        "tipo": "Psíquico",
+        "ataqueFavorito": "Poder oculto",
+        "evolucion": "No tiene"
+    },
+    {
+        "nombre": "girafarig",
+        "imagen": "./Imagenes/Girafarig.png",
+        "bTipo": "psiquico normal",
+        "tipo": "Psíquico/Normal",
+        "ataqueFavorito": "Láser doble",
+        "evolucion": "No tiene"
+    },
+    {
+        "nombre": "smoochum",
+        "imagen": "./Imagenes/Smoochum.png",
+        "bTipo": "hielo psiquico",
+        "tipo": "Hielo/Psíquico",
+        "ataqueFavorito": "Puño hielo",
+        "evolucion": "Jynx"
+    },
+    {
+        "nombre": "phantump",
+        "imagen": "./Imagenes/Phantump.png",
+        "bTipo": "fantasma hoja",
+        "tipo": "Fantasma/Hoja",
+        "ataqueFavorito": "Drenadoras",
+        "evolucion": "Trevenant"
+    },
+    {
+        "nombre": "venipede",
+        "imagen": "./Imagenes/Venipede.png",
+        "bTipo": "bicho veneno",
+        "tipo": "Bicho/Veneno",
+        "ataqueFavorito": "Cola veneno",
+        "evolucion": "Whirlipede y Scolipede"
+    },
+    {
+        "nombre": "mime-jr",
+        "imagen": "./Imagenes/Mime-Jr.png",
+        "bTipo": "psiquico hada",
+        "tipo": "Psíquico/Hada",
+        "ataqueFavorito": "Mimético",
+        "evolucion": "Mr. Mime"
+    },
+    {
+        "nombre": "bellsprout",
+        "imagen": "./Imagenes/Bellsprout.png",
+        "bTipo": "hoja veneno",
+        "tipo": "Hoja/Veneno",
+        "ataqueFavorito": "Polvo veneno",
+        "evolucion": "Weepinbell y Victreebel"
+    },
+    {
+        "nombre": "slowpoke",
+        "imagen": "./Imagenes/Slowpoke.png",
+        "bTipo": "agua psiquico",
+        "tipo": "Agua/Psíquico",
+        "ataqueFavorito": "Cabezazo zen",
+        "evolucion": "Slowbro o Slowking"
+    },
+    {
+        "nombre": "kabuto",
+        "imagen": "./Imagenes/Kabuto.png",
+        "bTipo": "roca agua",
+        "tipo": "Roca/Agua",
+        "ataqueFavorito": "Salmuera",
+        "evolucion": "Kabutops"
+    },
+    {
+        "nombre": "hoppip",
+        "imagen": "./Imagenes/Hoppip.png",
+        "bTipo": "hoja volador",
+        "tipo": "Hoja/Volador",
+        "ataqueFavorito": "Somnífero",
+        "evolucion": "Skiploom y Jumpluff"
+    },
+    {
+        "nombre": "larvesta",
+        "imagen": "./Imagenes/Larvesta.png",
+        "bTipo": "bicho fuego",
+        "tipo": "Bicho/Fuego",
+        "ataqueFavorito": "Nitrocarga",
+        "evolucion": "Volcarona"
+    },
+    {
+        "nombre": "sizzlipede",
+        "imagen": "./Imagenes/Sizzlipede.png",
+        "bTipo": "fuego bicho",
+        "tipo": "Fuego/Bicho",
+        "ataqueFavorito": "Rueda fuego",
+        "evolucion": "Centiskorch"
+    },
+    {
+        "nombre": "snom",
+        "imagen": "./Imagenes/Snom.png",
+        "bTipo": "hielo bicho",
+        "tipo": "Hielo/Bicho",
+        "ataqueFavorito": "Nieve polvo",
+        "evolucion": "Frosmoth"
+    },
+    {
+        "nombre": "sneasel",
+        "imagen": "./Imagenes/Sneasel.png",
+        "bTipo": "siniestro hielo",
+        "tipo": "Siniestro/Hielo",
+        "ataqueFavorito": "Viento hielo",
+        "evolucion": "Weaville"
+    },
+    {
+        "nombre": "houndour",
+        "imagen": "./Imagenes/Houndour.png",
+        "bTipo": "siniestro fuego",
+        "tipo": "Siniestro/Fuego",
+        "ataqueFavorito": "Calcinación",
+        "evolucion": "Houndoom"
+    },
+    {
+        "nombre": "carvanha",
+        "imagen": "./Imagenes/Carvanha.png",
+        "bTipo": "agua siniestro",
+        "tipo": "Agua/Siniestro",
+        "ataqueFavorito": "Triturar",
+        "evolucion": "Sharpedo"
+    },
+    {
+        "nombre": "meditite",
+        "imagen": "./Imagenes/Meditite.png",
+        "bTipo": "lucha psiquico",
+        "tipo": "Lucha/Psíquico",
+        "ataqueFavorito": "Detección",
+        "evolucion": "Medicham"
+    },
+    {
+        "nombre": "mankey",
+        "imagen": "./Imagenes/Mankey.png",
+        "bTipo": "lucha",
+        "tipo": "Lucha",
+        "ataqueFavorito": "Golpe furia",
+        "evolucion": "Primeape y Annihilape"
+    },
+    {
+        "nombre": "croagunk",
+        "imagen": "./Imagenes/Croagunk.png",
+        "bTipo": "veneno lucha",
+        "tipo": "Veneno/Lucha",
+        "ataqueFavorito": "Puya nociva",
+        "evolucion": "Toxicroak"
+    },
+    {
+        "nombre": "magnemite",
+        "imagen": "./Imagenes/Magnemite.png",
+        "bTipo": "electrico acero",
+        "tipo": "Eléctrico/Acero",
+        "ataqueFavorito": "Bomba sónica",
+        "evolucion": "Magneton y Magnezone"
+    },
+    {
+        "nombre": "ditto",
+        "imagen": "./Imagenes/Ditto.png",
+        "bTipo": "normal",
+        "tipo": "Normal",
+        "ataqueFavorito": "Transformación",
+        "evolucion": "No tiene"
+    },
+    {
+        "nombre": "fuecoco",
+        "imagen": "./Imagenes/Fuecoco.png",
+        "bTipo": "fuego",
+        "tipo": "Fuego",
+        "ataqueFavorito": "Ascuas",
+        "evolucion": "Crocalor y Skeledirge"
+    },
+    {
+        "nombre": "hippopotas",
+        "imagen": "./Imagenes/Hippopotas.png",
+        "bTipo": "tierra",
+        "tipo": "Tierra",
+        "ataqueFavorito": "Bucle arena",
+        "evolucion": "Hippowdon"
+    },
+    {
+        "nombre": "rowlet",
+        "imagen": "./Imagenes/Rowlet.png",
+        "bTipo": "hoja volador",
+        "tipo": "Hoja/Volador",
+        "ataqueFavorito": "Follaje",
+        "evolucion": "Dartrix y Decidueye"
+    },
+    {
+        "nombre": "celebi",
+        "imagen": "./Imagenes/Celebi.png",
+        "bTipo": "psiquico hoja",
+        "tipo": "Psíquico/Hoja",
+        "ataqueFavorito": "Canto mortal",
+        "evolucion": "No tiene"
+    },
+    {
+        "nombre": "cosmog",
+        "imagen": "./Imagenes/Cosmog.png",
+        "bTipo": "psiquico",
+        "tipo": "Psíquico",
+        "ataqueFavorito": "Teletransporte",
+        "evolucion": "Cosmoem y Solgaleo o Lunala"
+    },
+    {
+        "nombre": "mewtwo",
+        "imagen": "./Imagenes/Mewtwo.png",
+        "bTipo": "psiquico",
+        "tipo": "Psíquico",
+        "ataqueFavorito": "Onda mental",
+        "evolucion": "No tiene"
+    },
+    {
+        "nombre": "mew",
+        "imagen": "./Imagenes/Mew.png",
+        "bTipo": "psiquico",
+        "tipo": "Psíquico",
+        "ataqueFavorito": "Clonatipo",
+        "evolucion": "No tiene"
+    },
+    {
+        "nombre": "rayquaza",
+        "imagen": "./Imagenes/Rayquaza.png",
+        "bTipo": "dragon volador",
+        "tipo": "Dragón/Volador",
+        "ataqueFavorito": "Enfado",
+        "evolucion": "No tiene"
+    },
+    {
+        "nombre": "latios",
+        "imagen": "./Imagenes/Latios.png",
+        "bTipo": "dragon psiquico",
+        "tipo": "Dragón/Psíquico",
+        "ataqueFavorito": "Psíquico",
+        "evolucion": "No tiene"
+    },
+    {
+        "nombre": "latias",
+        "imagen": "./Imagenes/Latias.png",
+        "bTipo": "dragon psiquico",
+        "tipo": "Dragón/Psíquico",
+        "ataqueFavorito": "Pulso Dragón",
+        "evolucion": "No tiene"
+    }
+]
