@@ -1,7 +1,7 @@
 [
     {
         "nombre": "pikachu",
-        "imagen": "./Imagenes/Pikachu.png",
+        "imagen": "./Imagenes/Pokemones/Pikachu.png",
         "bTipo": "electrico",
         "tipo": "Eléctrico",
         "ataqueFavorito": "Impactrueno",
@@ -9,7 +9,7 @@
     },
     {
         "nombre": "charmander",
-        "imagen": "./Imagenes/Charmander.png",
+        "imagen": "./Imagenes/Pokemones/Charmander.png",
         "bTipo": "fuego",
         "tipo": "Fuego",
         "ataqueFavorito": "Lanzallamas",
@@ -17,15 +17,15 @@
     },
     {
         "nombre": "bulbasaur",
-        "imagen": "./Imagenes/Bulbasaur.png",
-        "bTipo": "hoja veneno",
-        "tipo": "Hoja/Veneno",
+        "imagen": "./Imagenes/Pokemones/Bulbasaur.png",
+        "bTipo": "planta veneno",
+        "tipo": "Planta/Veneno",
         "ataqueFavorito": "Látigo cepa",
         "evolucion": "Ivysaur y Venasaur"
     },
     {
         "nombre": "squirtle",
-        "imagen": "./Imagenes/Squirtle.png",
+        "imagen": "./Imagenes/Pokemones/Squirtle.png",
         "bTipo": "agua",
         "tipo": "Agua",
         "ataqueFavorito": "Hidrobomba",
@@ -33,7 +33,7 @@
     },
     {
         "nombre": "bagon",
-        "imagen": "./Imagenes/Bagon.png",
+        "imagen": "./Imagenes/Pokemones/Bagon.png",
         "bTipo": "dragon",
         "tipo": "Dragón",
         "ataqueFavorito": "Garra Dragón",
@@ -41,7 +41,7 @@
     },
     {
         "nombre": "torchic",
-        "imagen": "./Imagenes/Torchic.png",
+        "imagen": "./Imagenes/Pokemones/Torchic.png",
         "bTipo": "fuego",
         "tipo": "Fuego",
         "ataqueFavorito": "Arañazo",
@@ -49,7 +49,7 @@
     },
     {
         "nombre": "ekans",
-        "imagen": "./Imagenes/Ekans.png",
+        "imagen": "./Imagenes/Pokemones/Ekans.png",
         "bTipo": "veneno",
         "tipo": "Veneno",
         "ataqueFavorito": "Restricción",
@@ -57,7 +57,7 @@
     },
     {
         "nombre": "dratini",
-        "imagen": "./Imagenes/Dratini.png",
+        "imagen": "./Imagenes/Pokemones/Dratini.png",
         "bTipo": "dragon",
         "tipo": "Dragón",
         "ataqueFavorito": "Dragoaliento",
@@ -65,7 +65,7 @@
     },
     {
         "nombre": "magikarp",
-        "imagen": "./Imagenes/Magikarp.png",
+        "imagen": "./Imagenes/Pokemones/Magikarp.png",
         "bTipo": "agua",
         "tipo": "Agua",
         "ataqueFavorito": "Salpicadura",
@@ -73,7 +73,7 @@
     },
     {
         "nombre": "abra",
-        "imagen": "./Imagenes/Abra.png",
+        "imagen": "./Imagenes/Pokemones/Abra.png",
         "bTipo": "psiquico",
         "tipo": "Psíquico",
         "ataqueFavorito": "Teletransporte",
@@ -81,7 +81,7 @@
     },
     {
         "nombre": "porygon",
-        "imagen": "./Imagenes/Porygon.png",
+        "imagen": "./Imagenes/Pokemones/Porygon.png",
         "bTipo": "normal",
         "tipo": "Normal",
         "ataqueFavorito": "Hiperrayo",
@@ -89,7 +89,7 @@
     },
     {
         "nombre": "horsea",
-        "imagen": "./Imagenes/Horsea.png",
+        "imagen": "./Imagenes/Pokemones/Horsea.png",
         "bTipo": "agua",
         "tipo": "Agua",
         "ataqueFavorito": "Rayo burbuja",
@@ -97,7 +97,7 @@
     },
     {
         "nombre": "sudowoodo",
-        "imagen": "./Imagenes/Sudowoodo.png",
+        "imagen": "./Imagenes/Pokemones/Sudowoodo.png",
         "bTipo": "roca",
         "tipo": "Roca",
         "ataqueFavorito": "Avalancha",
@@ -105,7 +105,7 @@
     },
     {
         "nombre": "aron",
-        "imagen": "./Imagenes/Aron.png",
+        "imagen": "./Imagenes/Pokemones/Aron.png",
         "bTipo": "acero roca",
         "tipo": "Acero/Roca",
         "ataqueFavorito": "Garra metal",
@@ -113,7 +113,7 @@
     },
     {
         "nombre": "togepi",
-        "imagen": "./Imagenes/Togepi.png",
+        "imagen": "./Imagenes/Pokemones/Togepi.png",
         "bTipo": "hada",
         "tipo": "Hada",
         "ataqueFavorito": "Fuerza Lunar",
@@ -121,7 +121,7 @@
     },
     {
         "nombre": "riolu",
-        "imagen": "./Imagenes/Riolu.png",
+        "imagen": "./Imagenes/Pokemones/Riolu.png",
         "bTipo": "lucha",
         "tipo": "Lucha",
         "ataqueFavorito": "Onda vacío",
@@ -129,7 +129,7 @@
     },
     {
         "nombre": "zorua",
-        "imagen": "./Imagenes/Zorua.png",
+        "imagen": "./Imagenes/Pokemones/Zorua.png",
         "bTipo": "siniestro",
         "tipo": "Siniestro",
         "ataqueFavorito": "Pulso Noche",
@@ -137,7 +137,7 @@
     },
     {
         "nombre": "pawniard",
-        "imagen": "./Imagenes/Pawniard.png",
+        "imagen": "./Imagenes/Pokemones/Pawniard.png",
         "bTipo": "siniestro acero",
         "tipo": "Siniestro/Acero",
         "ataqueFavorito": "Gillotina",
@@ -145,7 +145,7 @@
     },
     {
         "nombre": "gastly",
-        "imagen": "./Imagenes/Gastly.png",
+        "imagen": "./Imagenes/Pokemones/Gastly.png",
         "bTipo": "fantasma veneno",
         "tipo": "Fantasma/Veneno",
         "ataqueFavorito": "Lengüetazo",
@@ -153,7 +153,7 @@
     },
     {
         "nombre": "litwick",
-        "imagen": "./Imagenes/Litwick.png",
+        "imagen": "./Imagenes/Pokemones/Litwick.png",
         "bTipo": "fantasma fuego",
         "tipo": "Fantasma/Fuego",
         "ataqueFavorito": "Fuego fatuo",
@@ -161,7 +161,7 @@
     },
     {
         "nombre": "scyther",
-        "imagen": "./Imagenes/Scyther.png",
+        "imagen": "./Imagenes/Pokemones/Scyther.png",
         "bTipo": "bicho volador",
         "tipo": "Bicho/Volador",
         "ataqueFavorito": "Tijera X",
@@ -169,7 +169,7 @@
     },
     {
         "nombre": "swablu",
-        "imagen": "./Imagenes/Swablu.png",
+        "imagen": "./Imagenes/Pokemones/Swablu.png",
         "bTipo": "volador normal",
         "tipo": "Volador/Normal",
         "ataqueFavorito": "Canto",
@@ -177,7 +177,7 @@
     },
     {
         "nombre": "cubone",
-        "imagen": "./Imagenes/Cubone.png",
+        "imagen": "./Imagenes/Pokemones/Cubone.png",
         "bTipo": "tierra",
         "tipo": "Tierra",
         "ataqueFavorito": "Huesomerang",
@@ -185,7 +185,7 @@
     },
     {
         "nombre": "snorunt",
-        "imagen": "./Imagenes/Snorunt.png",
+        "imagen": "./Imagenes/Pokemones/Snorunt.png",
         "bTipo": "hielo",
         "tipo": "Hielo",
         "ataqueFavorito": "Colmillo hielo",
@@ -193,7 +193,7 @@
     },
     {
         "nombre": "cufant",
-        "imagen": "./Imagenes/Cufant.png",
+        "imagen": "./Imagenes/Pokemones/Cufant.png",
         "bTipo": "acero",
         "tipo": "Acero",
         "ataqueFavorito": "Cabeza de hierro",
@@ -201,15 +201,15 @@
     },
     {
         "nombre": "budew",
-        "imagen": "./Imagenes/Budew.png",
-        "bTipo": "hoja veneno",
-        "tipo": "Hoja/Veneno",
+        "imagen": "./Imagenes/Pokemones/Budew.png",
+        "bTipo": "planta veneno",
+        "tipo": "Planta/Veneno",
         "ataqueFavorito": "Polvo veneno",
         "evolucion": "Roselia y Roserade"
     },
     {
         "nombre": "grubbin",
-        "imagen": "./Imagenes/Grubbin.png",
+        "imagen": "./Imagenes/Pokemones/Grubbin.png",
         "bTipo": "bicho",
         "tipo": "Bicho",
         "ataqueFavorito": "Picadura",
@@ -217,7 +217,7 @@
     },
     {
         "nombre": "rockruff",
-        "imagen": "./Imagenes/Rockruff.png",
+        "imagen": "./Imagenes/Pokemones/Rockruff.png",
         "bTipo": "roca",
         "tipo": "Roca",
         "ataqueFavorito": "Tumba roca",
@@ -225,7 +225,7 @@
     },
     {
         "nombre": "wooloo",
-        "imagen": "./Imagenes/Wooloo.png",
+        "imagen": "./Imagenes/Pokemones/Wooloo.png",
         "bTipo": "normal",
         "tipo": "Normal",
         "ataqueFavorito": "Golpe cabeza",
@@ -233,7 +233,7 @@
     },
     {
         "nombre": "sandile",
-        "imagen": "./Imagenes/Sandile.png",
+        "imagen": "./Imagenes/Pokemones/Sandile.png",
         "bTipo": "tierra siniestro",
         "tipo": "Tierra/Siniestro",
         "ataqueFavorito": "Mordisco",
@@ -241,7 +241,7 @@
     },
     {
         "nombre": "golett",
-        "imagen": "./Imagenes/Golett.png",
+        "imagen": "./Imagenes/Pokemones/Golett.png",
         "bTipo": "tierra fantasma",
         "tipo": "Tierra/Fantasma",
         "ataqueFavorito": "Puño sombra",
@@ -249,7 +249,7 @@
     },
     {
         "nombre": "pancham",
-        "imagen": "./Imagenes/Pancham.png",
+        "imagen": "./Imagenes/Pokemones/Pancham.png",
         "bTipo": "lucha",
         "tipo": "Lucha",
         "ataqueFavorito": "Llave giro",
@@ -257,7 +257,7 @@
     },
     {
         "nombre": "clobbopus",
-        "imagen": "./Imagenes/Clobbopus.png",
+        "imagen": "./Imagenes/Pokemones/Clobbopus.png",
         "bTipo": "lucha",
         "tipo": "Lucha",
         "ataqueFavorito": "Sumisión",
@@ -265,7 +265,7 @@
     },
     {
         "nombre": "joltik",
-        "imagen": "./Imagenes/Joltik.png",
+        "imagen": "./Imagenes/Pokemones/Joltik.png",
         "bTipo": "bicho electrico",
         "tipo": "Bicho/Eléctrico",
         "ataqueFavorito": "Electrotela",
@@ -273,7 +273,7 @@
     },
     {
         "nombre": "drifloon",
-        "imagen": "./Imagenes/Drifloon.png",
+        "imagen": "./Imagenes/Pokemones/Drifloon.png",
         "bTipo": "fantasma volador",
         "tipo": "Fantasma/Volador",
         "ataqueFavorito": "Tornado",
@@ -281,7 +281,7 @@
     },
     {
         "nombre": "elekid",
-        "imagen": "./Imagenes/Elekid.png",
+        "imagen": "./Imagenes/Pokemones/Elekid.png",
         "bTipo": "electrico",
         "tipo": "Eléctrico",
         "ataqueFavorito": "Puño trueno",
@@ -289,7 +289,7 @@
     },
     {
         "nombre": "shellos",
-        "imagen": "./Imagenes/Shellos.png",
+        "imagen": "./Imagenes/Pokemones/Shellos.png",
         "bTipo": "agua",
         "tipo": "Agua",
         "ataqueFavorito": "Hidropulso",
@@ -297,7 +297,7 @@
     },
     {
         "nombre": "happiny",
-        "imagen": "./Imagenes/Happiny.png",
+        "imagen": "./Imagenes/Pokemones/Happiny.png",
         "bTipo": "normal",
         "tipo": "Normal",
         "ataqueFavorito": "Beso dulce",
@@ -305,7 +305,7 @@
     },
     {
         "nombre": "ralts",
-        "imagen": "./Imagenes/Ralts.png",
+        "imagen": "./Imagenes/Pokemones/Ralts.png",
         "bTipo": "psiquico hada",
         "tipo": "Psíquico/Hada",
         "ataqueFavorito": "Confusión",
@@ -313,15 +313,15 @@
     },
     {
         "nombre": "paras",
-        "imagen": "./Imagenes/Paras.png",
-        "bTipo": "bicho hoja",
-        "tipo": "Bicho/Hoja",
+        "imagen": "./Imagenes/Pokemones/Paras.png",
+        "bTipo": "bicho planta",
+        "tipo": "Bicho/Planta",
         "ataqueFavorito": "Carga tóxica",
         "evolucion": "Parasect"
     },
     {
         "nombre": "honedge",
-        "imagen": "./Imagenes/Honedge.png",
+        "imagen": "./Imagenes/Pokemones/Honedge.png",
         "bTipo": "acero fantasma",
         "tipo": "Acero/Fantasma",
         "ataqueFavorito": "Eco metálico",
@@ -329,7 +329,7 @@
     },
     {
         "nombre": "jangmo-o",
-        "imagen": "./Imagenes/Jangmo-o.png",
+        "imagen": "./Imagenes/Pokemones/Jangmo-o.png",
         "bTipo": "dragon",
         "tipo": "Dragón",
         "ataqueFavorito": "Garra dragón",
@@ -337,7 +337,7 @@
     },
     {
         "nombre": "toxel",
-        "imagen": "./Imagenes/Toxel.png",
+        "imagen": "./Imagenes/Pokemones/Toxel.png",
         "bTipo": "electrico veneno",
         "tipo": "Eléctrico/Veneno",
         "ataqueFavorito": "Moflete estático",
@@ -345,7 +345,7 @@
     },
     {
         "nombre": "wimpod",
-        "imagen": "./Imagenes/Wimpod.png",
+        "imagen": "./Imagenes/Pokemones/Wimpod.png",
         "bTipo": "bicho agua",
         "tipo": "Bicho/Agua",
         "ataqueFavorito": "Estoicismo",
@@ -353,7 +353,7 @@
     },
     {
         "nombre": "shinx",
-        "imagen": "./Imagenes/Shinx.png",
+        "imagen": "./Imagenes/Pokemones/Shinx.png",
         "bTipo": "electrico",
         "tipo": "Eléctrico",
         "ataqueFavorito": "Carga",
@@ -361,7 +361,7 @@
     },
     {
         "nombre": "beldum",
-        "imagen": "./Imagenes/Beldum.png",
+        "imagen": "./Imagenes/Pokemones/Beldum.png",
         "bTipo": "acero psiquico",
         "tipo": "Acero/Psíquico",
         "ataqueFavorito": "Derribo",
@@ -369,7 +369,7 @@
     },
     {
         "nombre": "rookidee",
-        "imagen": "./Imagenes/Rookidee.png",
+        "imagen": "./Imagenes/Pokemones/Rookidee.png",
         "bTipo": "volador",
         "tipo": "Volador",
         "ataqueFavorito": "Picotazo",
@@ -377,7 +377,7 @@
     },
     {
         "nombre": "salandit",
-        "imagen": "./Imagenes/Salandit.png",
+        "imagen": "./Imagenes/Pokemones/Salandit.png",
         "bTipo": "veneno fuego",
         "tipo": "Veneno/Fuego",
         "ataqueFavorito": "Colmillo venenoso",
@@ -385,7 +385,7 @@
     },
     {
         "nombre": "heracross",
-        "imagen": "./Imagenes/Heracross.png",
+        "imagen": "./Imagenes/Pokemones/Heracross.png",
         "bTipo": "bicho lucha",
         "tipo": "Bicho/Lucha",
         "ataqueFavorito": "Megacuerno",
@@ -393,7 +393,7 @@
     },
     {
         "nombre": "marshadow",
-        "imagen": "./Imagenes/Marshadow.png",
+        "imagen": "./Imagenes/Pokemones/Marshadow.png",
         "bTipo": "lucha fantasma",
         "tipo": "Lucha/Fantasma",
         "ataqueFavorito": "Puño drenaje",
@@ -401,7 +401,7 @@
     },
     {
         "nombre": "lapras",
-        "imagen": "./Imagenes/Lapras.png",
+        "imagen": "./Imagenes/Pokemones/Lapras.png",
         "bTipo": "agua hielo",
         "tipo": "Agua/Hielo",
         "ataqueFavorito": "Canto helado",
@@ -409,15 +409,15 @@
     },
     {
         "nombre": "sunkern",
-        "imagen": "./Imagenes/Sunkern.png",
-        "bTipo": "hoja",
-        "tipo": "Hoja",
+        "imagen": "./Imagenes/Pokemones/Sunkern.png",
+        "bTipo": "planta",
+        "tipo": "Planta",
         "ataqueFavorito": "Absorber",
         "evolucion": "Sunflora"
     },
     {
         "nombre": "cutiefly",
-        "imagen": "./Imagenes/Cutiefly.png",
+        "imagen": "./Imagenes/Pokemones/Cutiefly.png",
         "bTipo": "bicho hada",
         "tipo": "Bicho/Hada",
         "ataqueFavorito": "Beso drenaje",
@@ -425,7 +425,7 @@
     },
     {
         "nombre": "unown",
-        "imagen": "./Imagenes/Unown.png",
+        "imagen": "./Imagenes/Pokemones/Unown.png",
         "bTipo": "psiquico",
         "tipo": "Psíquico",
         "ataqueFavorito": "Poder oculto",
@@ -433,7 +433,7 @@
     },
     {
         "nombre": "girafarig",
-        "imagen": "./Imagenes/Girafarig.png",
+        "imagen": "./Imagenes/Pokemones/Girafarig.png",
         "bTipo": "psiquico normal",
         "tipo": "Psíquico/Normal",
         "ataqueFavorito": "Láser doble",
@@ -441,7 +441,7 @@
     },
     {
         "nombre": "smoochum",
-        "imagen": "./Imagenes/Smoochum.png",
+        "imagen": "./Imagenes/Pokemones/Smoochum.png",
         "bTipo": "hielo psiquico",
         "tipo": "Hielo/Psíquico",
         "ataqueFavorito": "Puño hielo",
@@ -449,15 +449,15 @@
     },
     {
         "nombre": "phantump",
-        "imagen": "./Imagenes/Phantump.png",
-        "bTipo": "fantasma hoja",
-        "tipo": "Fantasma/Hoja",
+        "imagen": "./Imagenes/Pokemones/Phantump.png",
+        "bTipo": "fantasma planta",
+        "tipo": "Fantasma/Planta",
         "ataqueFavorito": "Drenadoras",
         "evolucion": "Trevenant"
     },
     {
         "nombre": "venipede",
-        "imagen": "./Imagenes/Venipede.png",
+        "imagen": "./Imagenes/Pokemones/Venipede.png",
         "bTipo": "bicho veneno",
         "tipo": "Bicho/Veneno",
         "ataqueFavorito": "Cola veneno",
@@ -465,7 +465,7 @@
     },
     {
         "nombre": "mime-jr",
-        "imagen": "./Imagenes/Mime-Jr.png",
+        "imagen": "./Imagenes/Pokemones/Mime-Jr.png",
         "bTipo": "psiquico hada",
         "tipo": "Psíquico/Hada",
         "ataqueFavorito": "Mimético",
@@ -473,15 +473,15 @@
     },
     {
         "nombre": "bellsprout",
-        "imagen": "./Imagenes/Bellsprout.png",
-        "bTipo": "hoja veneno",
-        "tipo": "Hoja/Veneno",
+        "imagen": "./Imagenes/Pokemones/Bellsprout.png",
+        "bTipo": "planta veneno",
+        "tipo": "Planta/Veneno",
         "ataqueFavorito": "Polvo veneno",
         "evolucion": "Weepinbell y Victreebel"
     },
     {
         "nombre": "slowpoke",
-        "imagen": "./Imagenes/Slowpoke.png",
+        "imagen": "./Imagenes/Pokemones/Slowpoke.png",
         "bTipo": "agua psiquico",
         "tipo": "Agua/Psíquico",
         "ataqueFavorito": "Cabezazo zen",
@@ -489,7 +489,7 @@
     },
     {
         "nombre": "kabuto",
-        "imagen": "./Imagenes/Kabuto.png",
+        "imagen": "./Imagenes/Pokemones/Kabuto.png",
         "bTipo": "roca agua",
         "tipo": "Roca/Agua",
         "ataqueFavorito": "Salmuera",
@@ -497,15 +497,15 @@
     },
     {
         "nombre": "hoppip",
-        "imagen": "./Imagenes/Hoppip.png",
-        "bTipo": "hoja volador",
-        "tipo": "Hoja/Volador",
+        "imagen": "./Imagenes/Pokemones/Hoppip.png",
+        "bTipo": "planta volador",
+        "tipo": "Planta/Volador",
         "ataqueFavorito": "Somnífero",
         "evolucion": "Skiploom y Jumpluff"
     },
     {
         "nombre": "larvesta",
-        "imagen": "./Imagenes/Larvesta.png",
+        "imagen": "./Imagenes/Pokemones/Larvesta.png",
         "bTipo": "bicho fuego",
         "tipo": "Bicho/Fuego",
         "ataqueFavorito": "Nitrocarga",
@@ -513,7 +513,7 @@
     },
     {
         "nombre": "sizzlipede",
-        "imagen": "./Imagenes/Sizzlipede.png",
+        "imagen": "./Imagenes/Pokemones/Sizzlipede.png",
         "bTipo": "fuego bicho",
         "tipo": "Fuego/Bicho",
         "ataqueFavorito": "Rueda fuego",
@@ -521,7 +521,7 @@
     },
     {
         "nombre": "snom",
-        "imagen": "./Imagenes/Snom.png",
+        "imagen": "./Imagenes/Pokemones/Snom.png",
         "bTipo": "hielo bicho",
         "tipo": "Hielo/Bicho",
         "ataqueFavorito": "Nieve polvo",
@@ -529,7 +529,7 @@
     },
     {
         "nombre": "sneasel",
-        "imagen": "./Imagenes/Sneasel.png",
+        "imagen": "./Imagenes/Pokemones/Sneasel.png",
         "bTipo": "siniestro hielo",
         "tipo": "Siniestro/Hielo",
         "ataqueFavorito": "Viento hielo",
@@ -537,7 +537,7 @@
     },
     {
         "nombre": "houndour",
-        "imagen": "./Imagenes/Houndour.png",
+        "imagen": "./Imagenes/Pokemones/Houndour.png",
         "bTipo": "siniestro fuego",
         "tipo": "Siniestro/Fuego",
         "ataqueFavorito": "Calcinación",
@@ -545,7 +545,7 @@
     },
     {
         "nombre": "carvanha",
-        "imagen": "./Imagenes/Carvanha.png",
+        "imagen": "./Imagenes/Pokemones/Carvanha.png",
         "bTipo": "agua siniestro",
         "tipo": "Agua/Siniestro",
         "ataqueFavorito": "Triturar",
@@ -553,7 +553,7 @@
     },
     {
         "nombre": "meditite",
-        "imagen": "./Imagenes/Meditite.png",
+        "imagen": "./Imagenes/Pokemones/Meditite.png",
         "bTipo": "lucha psiquico",
         "tipo": "Lucha/Psíquico",
         "ataqueFavorito": "Detección",
@@ -561,7 +561,7 @@
     },
     {
         "nombre": "mankey",
-        "imagen": "./Imagenes/Mankey.png",
+        "imagen": "./Imagenes/Pokemones/Mankey.png",
         "bTipo": "lucha",
         "tipo": "Lucha",
         "ataqueFavorito": "Golpe furia",
@@ -569,7 +569,7 @@
     },
     {
         "nombre": "croagunk",
-        "imagen": "./Imagenes/Croagunk.png",
+        "imagen": "./Imagenes/Pokemones/Croagunk.png",
         "bTipo": "veneno lucha",
         "tipo": "Veneno/Lucha",
         "ataqueFavorito": "Puya nociva",
@@ -577,7 +577,7 @@
     },
     {
         "nombre": "magnemite",
-        "imagen": "./Imagenes/Magnemite.png",
+        "imagen": "./Imagenes/Pokemones/Magnemite.png",
         "bTipo": "electrico acero",
         "tipo": "Eléctrico/Acero",
         "ataqueFavorito": "Bomba sónica",
@@ -585,7 +585,7 @@
     },
     {
         "nombre": "ditto",
-        "imagen": "./Imagenes/Ditto.png",
+        "imagen": "./Imagenes/Pokemones/Ditto.png",
         "bTipo": "normal",
         "tipo": "Normal",
         "ataqueFavorito": "Transformación",
@@ -593,7 +593,7 @@
     },
     {
         "nombre": "fuecoco",
-        "imagen": "./Imagenes/Fuecoco.png",
+        "imagen": "./Imagenes/Pokemones/Fuecoco.png",
         "bTipo": "fuego",
         "tipo": "Fuego",
         "ataqueFavorito": "Ascuas",
@@ -601,7 +601,7 @@
     },
     {
         "nombre": "hippopotas",
-        "imagen": "./Imagenes/Hippopotas.png",
+        "imagen": "./Imagenes/Pokemones/Hippopotas.png",
         "bTipo": "tierra",
         "tipo": "Tierra",
         "ataqueFavorito": "Bucle arena",
@@ -609,23 +609,23 @@
     },
     {
         "nombre": "rowlet",
-        "imagen": "./Imagenes/Rowlet.png",
-        "bTipo": "hoja volador",
-        "tipo": "Hoja/Volador",
+        "imagen": "./Imagenes/Pokemones/Rowlet.png",
+        "bTipo": "planta volador",
+        "tipo": "Planta/Volador",
         "ataqueFavorito": "Follaje",
         "evolucion": "Dartrix y Decidueye"
     },
     {
         "nombre": "celebi",
-        "imagen": "./Imagenes/Celebi.png",
-        "bTipo": "psiquico hoja",
-        "tipo": "Psíquico/Hoja",
+        "imagen": "./Imagenes/Pokemones/Celebi.png",
+        "bTipo": "psiquico planta",
+        "tipo": "Psíquico/Planta",
         "ataqueFavorito": "Canto mortal",
         "evolucion": "No tiene"
     },
     {
         "nombre": "cosmog",
-        "imagen": "./Imagenes/Cosmog.png",
+        "imagen": "./Imagenes/Pokemones/Cosmog.png",
         "bTipo": "psiquico",
         "tipo": "Psíquico",
         "ataqueFavorito": "Teletransporte",
@@ -633,7 +633,7 @@
     },
     {
         "nombre": "mewtwo",
-        "imagen": "./Imagenes/Mewtwo.png",
+        "imagen": "./Imagenes/Pokemones/Mewtwo.png",
         "bTipo": "psiquico",
         "tipo": "Psíquico",
         "ataqueFavorito": "Onda mental",
@@ -641,7 +641,7 @@
     },
     {
         "nombre": "mew",
-        "imagen": "./Imagenes/Mew.png",
+        "imagen": "./Imagenes/Pokemones/Mew.png",
         "bTipo": "psiquico",
         "tipo": "Psíquico",
         "ataqueFavorito": "Clonatipo",
@@ -649,7 +649,7 @@
     },
     {
         "nombre": "rayquaza",
-        "imagen": "./Imagenes/Rayquaza.png",
+        "imagen": "./Imagenes/Pokemones/Rayquaza.png",
         "bTipo": "dragon volador",
         "tipo": "Dragón/Volador",
         "ataqueFavorito": "Enfado",
@@ -657,7 +657,7 @@
     },
     {
         "nombre": "latios",
-        "imagen": "./Imagenes/Latios.png",
+        "imagen": "./Imagenes/Pokemones/Latios.png",
         "bTipo": "dragon psiquico",
         "tipo": "Dragón/Psíquico",
         "ataqueFavorito": "Psíquico",
@@ -665,7 +665,7 @@
     },
     {
         "nombre": "latias",
-        "imagen": "./Imagenes/Latias.png",
+        "imagen": "./Imagenes/Pokemones/Latias.png",
         "bTipo": "dragon psiquico",
         "tipo": "Dragón/Psíquico",
         "ataqueFavorito": "Pulso Dragón",

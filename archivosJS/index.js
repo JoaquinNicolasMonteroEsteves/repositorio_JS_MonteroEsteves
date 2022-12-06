@@ -9,10 +9,15 @@ const tcontainer = document.getElementById("tBuscados")
 const btnBuscados = document.getElementById("btnBuscados")
 const btnStorage = document.getElementById("btnStorage")
 const btnLimpiar = document.getElementById("btnLimpiar")
+const pnombre = document.getElementById("pnombre")
+const pimagen = document.getElementById("pimagen")
+const ptipo = document.getElementById("ptipo")
+
 const buscadosNombre = []
 const buscadosTipo = []
 const equipo = []
 const pokemones = []
+
 const URL = './baseDatos/pokemones.json'
 
 fetch(URL)
@@ -72,6 +77,20 @@ let interaccionPokemon = () => {
             alertaMolestado(encontrado)
         })
     })
+}
+
+let cargarEquipoPokemon = (muchachos) => {
+    let fila1 = ""
+    let fila2 = ""
+    let fila3 = ""
+        muchachos.forEach(muchacho => {
+            fila1 += `<td>${muchacho.nombre}</td>`
+            fila2 += `<td><img src="${muchacho.imagen}" class="${muchacho.bTipo}"></td>`
+            fila3 += `<td><img src="./Imagenes/Tipos/Tipos/${muchacho.bTipo}.png" class="tipo-tabla"></td>   `
+        })
+        pnombre.innerHTML = fila1
+        pimagen.innerHTML = fila2
+        ptipo.innerHTML = fila3
 }
 
 let cargarPokemones = (array) => {
@@ -211,10 +230,10 @@ let mostrarBtnLimpiarStorage = () => {
 mostrarBtnLimpiarStorage()
 
 let alertaMolestado = (x) => {
-    swal("Acabás de molestar a " + capitalize(x.nombre), "", "./Imagenes/" + capitalize(x.nombre) + ".png", {
+    swal("Acabás de molestar a " + capitalize(x.nombre), "", "./Imagenes/Pokemones/" + capitalize(x.nombre) + ".png", {
         buttons: {
           cancel: "¡Escapar!",
-          catch: {text: "¡Arrojar Pokebola!",value: "catch"},
+          catch: {text: "¡Arrojar Pokebola!", value: "catch"},
           defeat: {text:"Derrotar",} 
         },
         }
@@ -225,7 +244,14 @@ let alertaMolestado = (x) => {
             swal(capitalize(x.nombre) + " fue derrotado", "¡Ganaste 500XP!", "./Imagenes/PokemonDerrotado.gif");
             break;
           case "catch":
-            swal("¡¡Atrapado!!","¡" + capitalize(x.nombre) + " fue agregado a tu equipo exitosamente!", "./Imagenes/PokemonAtrapado.gif");
+            if (equipo.length < 6) {
+                equipo.push(x)
+                swal("¡¡Atrapado!!","¡" + capitalize(x.nombre) + " fue agregado a tu equipo exitosamente!", "./Imagenes/PokemonAtrapado.gif")
+                debugger
+                cargarEquipoPokemon(equipo)
+            } else {
+                swal("¡Ups! Su equipo está completo", "Libere un pokemon del equipo para poder agregar otro", "./Imagenes/equipoLleno.gif")
+            }
             break;
           default:
             swal("¡Zafaste!", "", "./Imagenes/PokemonEscape.gif");}
