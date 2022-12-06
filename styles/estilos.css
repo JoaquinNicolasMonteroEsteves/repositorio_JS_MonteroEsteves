@@ -765,11 +765,49 @@ ul {
 
 }
 
-table {
-    background-color: rgba(211, 211, 211, 0.8);
-    overflow: hidden;
+div#equipo {
+    width: 98vw;
+    /* background-color: yellow; */
+    margin: 0vw 1vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-table tbody tr td {
+/* table tr:nth-child(odd){
+    
+}
+table tr:nth-child(2){
+    background: linear-gradient(0deg, rgba(211, 211, 211, 0.635) 0%, black 120%);
+} */
+
+table {
+    /* background: linear-gradient(0deg, rgba(200, 200, 200, 0.635) 0%, rgb(35, 35, 35) 100%); */
+    /* background: linear-gradient(0deg, rgba(200,200,200,0.64) 13.5%, rgba(109,109,109,1) 81.6%, rgba(35,35,35,1) 100%); */
+    background: linear-gradient(0deg, rgba(240,240,240,0) 8.5%, rgba(200,200,200,0.64) 8.5%, rgba(109,109,109,1) 81.6%, rgba(35,35,35,1) 100%);
+    border-spacing: 0;
+}
+
+table td {
     text-align: center;
+    /* border: 1px solid black; */
+    /* width: 200px; */
+}
+
+.content {
+    width: 16vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-equipo {
+    height: 16vw;
+    object-fit: contain;
+    margin: 4px;
+}
+
+.tnombre {
+    font-size: 30px;
+    font-weight: bold;
 }

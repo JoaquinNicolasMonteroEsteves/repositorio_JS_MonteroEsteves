@@ -12,6 +12,7 @@ const btnLimpiar = document.getElementById("btnLimpiar")
 const pnombre = document.getElementById("pnombre")
 const pimagen = document.getElementById("pimagen")
 const ptipo = document.getElementById("ptipo")
+const pbutton = document.getElementById("pbutton")
 
 const buscadosNombre = []
 const buscadosTipo = []
@@ -83,14 +84,17 @@ let cargarEquipoPokemon = (muchachos) => {
     let fila1 = ""
     let fila2 = ""
     let fila3 = ""
+    let fila4 = ""
         muchachos.forEach(muchacho => {
-            fila1 += `<td>${muchacho.nombre}</td>`
-            fila2 += `<td><img src="${muchacho.imagen}" class="${muchacho.bTipo}"></td>`
-            fila3 += `<td><img src="./Imagenes/Tipos/Tipos/${muchacho.bTipo}.png" class="tipo-tabla"></td>   `
+            fila1 += `<td class="tnombre">${capitalize(muchacho.nombre)}</td>`
+            fila2 += `<td><div class="${muchacho.bTipo} content"><img src="${muchacho.imagen}" class="img-equipo"></div></td>`
+            fila3 += `<td><img src="./Imagenes/Tipos/Tipos/${muchacho.bTipo}.png" class="content"></td>`
+            fila4 += `<td class = "tbutton"><button>Liberar</button></td>`
         })
         pnombre.innerHTML = fila1
         pimagen.innerHTML = fila2
         ptipo.innerHTML = fila3
+        pbutton.innerHTML = fila4
 }
 
 let cargarPokemones = (array) => {
@@ -247,7 +251,6 @@ let alertaMolestado = (x) => {
             if (equipo.length < 6) {
                 equipo.push(x)
                 swal("¡¡Atrapado!!","¡" + capitalize(x.nombre) + " fue agregado a tu equipo exitosamente!", "./Imagenes/PokemonAtrapado.gif")
-                debugger
                 cargarEquipoPokemon(equipo)
             } else {
                 swal("¡Ups! Su equipo está completo", "Libere un pokemon del equipo para poder agregar otro", "./Imagenes/equipoLleno.gif")
