@@ -808,6 +808,7 @@ table td {
 }
 
 .tnombre {
+    width: 16vw;
     font-size: 30px;
     font-weight: bold;
 }
