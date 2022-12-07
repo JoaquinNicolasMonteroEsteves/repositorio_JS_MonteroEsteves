@@ -13,7 +13,6 @@ const pnombre = document.getElementById("pnombre")
 const pimagen = document.getElementById("pimagen")
 const ptipo = document.getElementById("ptipo")
 const pbutton = document.getElementById("pbutton")
-const tbutton = document.getElementsByClassName("tbutton")
 
 const buscadosNombre = []
 const buscadosTipo = []
@@ -81,8 +80,16 @@ let interaccionPokemon = () => {
     })
 }
 
-let liberarPokemon = () => {
+let btnEquipo = document.querySelectorAll("button.tbutton")
 
+let liberacionPokemon = () => {
+    btnEquipo.forEach(btn => {
+        btn.addEventListener("click", () => {
+            let coincidencia = equipo.findIndex(pokemon => pokemon.nombre === btn.id)
+            equipo.splice(coincidencia, 1)
+            cargarEquipoPokemon(equipo)
+        })
+    })
 }
 
 let cargarEquipoPokemon = (muchachos) => {
@@ -101,8 +108,11 @@ let cargarEquipoPokemon = (muchachos) => {
         ptipo.innerHTML = fila3
         pbutton.innerHTML = fila4
 
-        tbutton.addEventListener("click", liberarPokemon)
+        btnEquipo = document.querySelectorAll("button.tbutton")
+        liberacionPokemon()
 }
+
+let tbutton = document.getElementsByClassName("tbutton")
 
 let cargarPokemones = (array) => {
     let contenido = ""

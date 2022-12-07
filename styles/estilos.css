@@ -296,6 +296,71 @@ ul {
     text-align: center;
 }
 
+/*APARTADO EQUIPO*/
+
+div#equipo {
+    width: 98vw;
+    margin: 0vw 1vw;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+table {
+    background: linear-gradient(0deg, rgba(240,240,240,0) 16%, rgba(200,200,200,0.64) 16%, rgba(109,109,109,1) 81.6%, rgba(35,35,35,1) 100%);
+    border-spacing: 0;
+}
+
+table td {
+    text-align: center;
+}
+
+.content {
+    max-width: 125px;
+    max-height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.img-equipo {
+    max-height: inherit;
+    object-fit: contain;
+}
+
+.tnombre {
+    height: 26px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.tbutton img {
+    height: 30px;
+    border: 1px solid black;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tbutton {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: 1px solid black;
+    visibility: hidden;
+}
+
+table:hover  .tbutton{
+    visibility: visible;
+}
+
+.tbutton:active {
+    transform: scale(1.2);
+}
+
 /*COLOR DEL FONDO DE LAS TARJETAS*/
 
 .electrico {
@@ -656,14 +721,25 @@ ul {
     ul {
         padding-left: 3.3vw;
     }
-/*     
-    .swal-button {
-        font-size: 19px;
-    } */
 
     #btnBuscados, #btnLimpiar, #btnStorage {
         width: 30vw;
         font-size: 3vw;
+    }
+
+    .content {
+        max-width: 220px;
+        max-height: 220px;
+    }
+
+    .tnombre {
+        height: 35px;
+        font-size: 30px;
+        font-weight: bold;
+    }
+    
+    .tbutton img {
+        height: 50px;;
     }
 }
 
@@ -756,68 +832,4 @@ ul {
         font-size: 2.2vw;
     }
 
-}
-
-div#equipo {
-    width: 98vw;
-    /* background-color: yellow; */
-    margin: 0vw 1vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-table {
-
-    background: linear-gradient(0deg, rgba(240,240,240,0) 15%, rgba(200,200,200,0.64) 15%, rgba(109,109,109,1) 81.6%, rgba(35,35,35,1) 100%);
-    border-spacing: 0;
-}
-
-table td {
-    text-align: center;
-    /* border: 1px solid black; */
-    /* width: 200px; */
-}
-
-.content {
-    max-width: 16vw;
-    max-height: 16vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.img-equipo {
-    max-height: inherit;
-    object-fit: contain;
-}
-
-.tnombre {
-    height: 3vw;
-    font-size: 2.5vw;
-    font-weight: bold;
-}
-
-.tbutton img {
-
-    height: 3vw;
-    border: 1px solid black;
-}
-
-.buttonContainer {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-.tbutton {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    border: 1px solid black;
-    /* visibility: hidden; */
-}
-
-table:hover  .tbutton{
-    visibility: visible;
 }
