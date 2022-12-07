@@ -89,7 +89,7 @@ let cargarEquipoPokemon = (muchachos) => {
             fila1 += `<td class="tnombre">${capitalize(muchacho.nombre)}</td>`
             fila2 += `<td><div class="${muchacho.bTipo} content"><img src="${muchacho.imagen}" class="img-equipo"></div></td>`
             fila3 += `<td><img src="./Imagenes/Tipos/Tipos/${muchacho.bTipo}.png" class="content"></td>`
-            fila4 += `<td class = "tbutton"><button>Liberar</button></td>`
+            fila4 += `<td><div class = "tbutton"><button>Liberar</button></div></td>`
         })
         pnombre.innerHTML = fila1
         pimagen.innerHTML = fila2
