@@ -254,18 +254,18 @@ ul {
 /*SWAL*/
 
 .swal-modal {
-    border: 0.75vw solid black;
-    width: 75vw;
+    border: 5px solid black;
+    width: 250px;
     justify-items: center;
 }
 
 .swal-text:first-child {
-    margin: 6.25vw 0vw;
+    margin: 25px 0px;
 }
 
 .swal-text:last-child {
-    margin: 2vw;
-    padding: 0vw;
+    margin: 8px;
+    padding: 0px;
 }
 
 .swal-text {
@@ -578,7 +578,7 @@ ul {
     }
 
     .swal-modal {
-        width: 60vw;
+        width: 450px;
     }
 }
 
@@ -656,14 +656,10 @@ ul {
     ul {
         padding-left: 3.3vw;
     }
-    
-    .swal-modal {
-        width: 50vw;
-    }
-
+/*     
     .swal-button {
         font-size: 19px;
-    }
+    } */
 
     #btnBuscados, #btnLimpiar, #btnStorage {
         width: 30vw;
@@ -745,18 +741,15 @@ ul {
         padding-left: 2.5vw;
         padding-right: 1vw;
     }
-    
-    .swal-modal {
-        width: 50vw;
-    }
 
-    .swal-footer {
+
+    /* .swal-footer {
         padding: 16px 0px;
     }
 
     .swal-button {
         font-size: 19px;
-    }
+    } */
 
     #btnBuscados, #btnLimpiar, #btnStorage {
         width: 20vw;
@@ -774,17 +767,9 @@ div#equipo {
     justify-content: center;
 }
 
-/* table tr:nth-child(odd){
-    
-}
-table tr:nth-child(2){
-    background: linear-gradient(0deg, rgba(211, 211, 211, 0.635) 0%, black 120%);
-} */
-
 table {
-    /* background: linear-gradient(0deg, rgba(200, 200, 200, 0.635) 0%, rgb(35, 35, 35) 100%); */
-    /* background: linear-gradient(0deg, rgba(200,200,200,0.64) 13.5%, rgba(109,109,109,1) 81.6%, rgba(35,35,35,1) 100%); */
-    background: linear-gradient(0deg, rgba(240,240,240,0) 11.7%, rgba(200,200,200,0.64) 11.7%, rgba(109,109,109,1) 81.6%, rgba(35,35,35,1) 100%);
+
+    background: linear-gradient(0deg, rgba(240,240,240,0) 15%, rgba(200,200,200,0.64) 15%, rgba(109,109,109,1) 81.6%, rgba(35,35,35,1) 100%);
     border-spacing: 0;
 }
 
@@ -813,6 +798,26 @@ table td {
     font-weight: bold;
 }
 
-.tbutton {
+.tbutton img {
+
     height: 3vw;
+    border: 1px solid black;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.tbutton {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: 1px solid black;
+    /* visibility: hidden; */
+}
+
+table:hover  .tbutton{
+    visibility: visible;
 }

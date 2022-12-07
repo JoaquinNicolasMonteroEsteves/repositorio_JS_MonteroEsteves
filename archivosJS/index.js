@@ -13,6 +13,7 @@ const pnombre = document.getElementById("pnombre")
 const pimagen = document.getElementById("pimagen")
 const ptipo = document.getElementById("ptipo")
 const pbutton = document.getElementById("pbutton")
+const tbutton = document.getElementsByClassName("tbutton")
 
 const buscadosNombre = []
 const buscadosTipo = []
@@ -80,6 +81,10 @@ let interaccionPokemon = () => {
     })
 }
 
+let liberarPokemon = () => {
+
+}
+
 let cargarEquipoPokemon = (muchachos) => {
     let fila1 = ""
     let fila2 = ""
@@ -87,14 +92,16 @@ let cargarEquipoPokemon = (muchachos) => {
     let fila4 = ""
         muchachos.forEach(muchacho => {
             fila1 += `<td class="tnombre">${capitalize(muchacho.nombre)}</td>`
-            fila2 += `<td><div class="${muchacho.bTipo} content"><img src="${muchacho.imagen}" class="img-equipo"></div></td>`
+            fila2 += `<td class="${muchacho.bTipo}"><div class="content"><img src="${muchacho.imagen}" class="img-equipo"></div></td>`
             fila3 += `<td><img src="./Imagenes/Tipos/Tipos/${muchacho.bTipo}.png" class="content"></td>`
-            fila4 += `<td><div class = "tbutton"><button>Liberar</button></div></td>`
+            fila4 += `<td><div class="buttonContainer"><button id="${muchacho.nombre}" class="tbutton"><img src="./Imagenes/pokebolaAbierta.png"></button></div></td>`
         })
         pnombre.innerHTML = fila1
         pimagen.innerHTML = fila2
         ptipo.innerHTML = fila3
         pbutton.innerHTML = fila4
+
+        tbutton.addEventListener("click", liberarPokemon)
 }
 
 let cargarPokemones = (array) => {
