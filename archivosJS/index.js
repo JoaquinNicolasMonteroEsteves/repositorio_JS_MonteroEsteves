@@ -9,6 +9,8 @@ const tcontainer = document.getElementById("tBuscados")
 const btnBuscados = document.getElementById("btnBuscados")
 const btnStorage = document.getElementById("btnStorage")
 const btnLimpiar = document.getElementById("btnLimpiar")
+const btnLimpiarEquipo = document.getElementById("btnEquipo")
+const equipoTitulo = document.getElementById("equipoTitulo")
 const pnombre = document.getElementById("pnombre")
 const pimagen = document.getElementById("pimagen")
 const ptipo = document.getElementById("ptipo")
@@ -38,7 +40,7 @@ let cardPokemon = (pokemon) => {
                         <button type="button" class="botonesEquipo" id="${pokemon.nombre}"><img src="./Imagenes/pokebola.png" class="imagenCarrito"></button>
                     </div>
                 </div>
-                <div class="slide slide1 ${pokemon.bTipo}" id="card${pokemon.id}">
+                <div class="slide slide1 ${pokemon.bTipo}" id="card${pokemon.nombre}">
                     <div class="card-nombre"><h2>${capitalize(pokemon.nombre)}</h2></div>
                     <img id="imagen-pokemon" src=${pokemon.imagen}>
                 </div>                    
@@ -85,11 +87,22 @@ let btnEquipo = document.querySelectorAll("button.tbutton")
 let liberacionPokemon = () => {
     btnEquipo.forEach(btn => {
         btn.addEventListener("click", () => {
-            let coincidencia = equipo.findIndex(pokemon => pokemon.nombre === btn.id)
-            equipo.splice(coincidencia, 1)
-            cargarEquipoPokemon(equipo)
+                btn.children[0].src = `./Imagenes/pokebolaAbierta.png`
+                btn.animate([
+                    {transform: 'translateY(-60px)'},
+                    {transform: 'scale(2.5)'}
+                ], {
+                    duration: 1900,
+                })
+                setTimeout( () => {
+                    let coincidencia = equipo.findIndex(pokemon => pokemon.nombre === btn.id)
+                    swal(capitalize(`${equipo[coincidencia].nombre}`)+ " fue liberado...", "...nos volveremos a encontrar!", "./Imagenes/pokemonLiberado.gif")
+                    equipo.splice(coincidencia, 1),
+                    cargarEquipoPokemon(equipo)
+            }, 1500)
         })
     })
+    
 }
 
 let cargarEquipoPokemon = (muchachos) => {
@@ -97,19 +110,25 @@ let cargarEquipoPokemon = (muchachos) => {
     let fila2 = ""
     let fila3 = ""
     let fila4 = ""
+    let titulo = ""
+    if (muchachos.length > 0) {
         muchachos.forEach(muchacho => {
             fila1 += `<td class="tnombre">${capitalize(muchacho.nombre)}</td>`
             fila2 += `<td class="${muchacho.bTipo}"><div class="content"><img src="${muchacho.imagen}" class="img-equipo"></div></td>`
             fila3 += `<td><img src="./Imagenes/Tipos/Tipos/${muchacho.bTipo}.png" class="content"></td>`
-            fila4 += `<td><div class="buttonContainer"><button id="${muchacho.nombre}" class="tbutton"><img src="./Imagenes/pokebolaAbierta.png"></button></div></td>`
+            fila4 += `<td class="buttontd"><div class="buttonContainer"><button id="${muchacho.nombre}" class="tbutton"><img src="./Imagenes/pokebola.png"></button></div></td>`
         })
-        pnombre.innerHTML = fila1
-        pimagen.innerHTML = fila2
-        ptipo.innerHTML = fila3
-        pbutton.innerHTML = fila4
-
-        btnEquipo = document.querySelectorAll("button.tbutton")
-        liberacionPokemon()
+        titulo = `<h2 class="tituloBanner">EQUIPO ESCOGIDO</h2>`
+    
+    }
+    equipoTitulo.innerHTML = titulo
+    pnombre.innerHTML = fila1
+    pimagen.innerHTML = fila2
+    ptipo.innerHTML = fila3
+    pbutton.innerHTML = fila4
+    btnEquipo = document.querySelectorAll("button.tbutton")
+    liberacionPokemon()
+    mostrarLimpiarEquipo()
 }
 
 let tbutton = document.getElementsByClassName("tbutton")
@@ -131,7 +150,7 @@ let cargarPokemonesBuscados = (array, banner, elemento, filtro) => {
     let contenido = ""
         if(array.length > 0) {
             array.forEach (pokemon => {
-                titulo = `<h2>POR ${filtro}</h2>`
+                titulo = `<h2 class="tituloBanner">POR ${filtro}</h2>`
                 contenido += cardPokemonBuscado(pokemon)
             })
             banner.innerHTML = titulo
@@ -160,6 +179,21 @@ let limpiarBuscados = () => {
     btnLimpiar.classList.add("hidden")
 }
 btnLimpiar.addEventListener("click", limpiarBuscados)
+
+let limpiarEquipo = () => {
+    let equipo = []
+    cargarEquipoPokemon(equipo)
+}
+
+let mostrarLimpiarEquipo = () => {
+    if(equipo.length > 0) {
+        btnLimpiarEquipo.classList.remove("hidden")
+        btnLimpiarEquipo.addEventListener("click", limpiarEquipo)
+    } else {
+        btnLimpiarEquipo.classList.add("hidden")
+    }
+}
+mostrarLimpiarEquipo()
 
 let mostrarFiltradoNombre = () => {
     let resultado = pokemones.filter(pokemon => pokemon.nombre.includes(inputBuscador.value.toLowerCase().trim()))
@@ -209,10 +243,7 @@ let filtrarPokemones = () => {
             cargarPokemones(pokemones)
         } else {
             cargarPokemones(pokemones)
-            btnInteraccion = document.querySelectorAll("button.botonesEquipo")
         }
-        btnInteraccion = document.querySelectorAll("button.botonesEquipo")
-        interaccionPokemon()
         limpiarBuscados()
 }
 inputBuscador.addEventListener("search", filtrarPokemones)
@@ -266,9 +297,14 @@ let alertaMolestado = (x) => {
             break;
           case "catch":
             if (equipo.length < 6) {
+                let match = equipo.find(matcheado => matcheado.nombre === x.nombre)
+                if (!match) {
                 equipo.push(x)
                 swal("¡¡Atrapado!!","¡" + capitalize(x.nombre) + " fue agregado a tu equipo exitosamente!", "./Imagenes/PokemonAtrapado.gif")
                 cargarEquipoPokemon(equipo)
+                } else {
+                    swal("Este pokemon ya se encuentra en su equipo, elija otro", "", "./Imagenes/pokemonDuplicado.gif")
+                }
             } else {
                 swal("¡Ups! Su equipo está completo", "Libere un pokemon del equipo para poder agregar otro", "./Imagenes/equipoLleno.gif")
             }

@@ -34,6 +34,7 @@ div#containerBuscadores {
 
 div#buscadores {
     padding: 1.2vw 1.2vw;
+    width: auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -222,7 +223,7 @@ ul {
 }
 
 
-#btnBuscados, #btnLimpiar, #btnStorage {
+#btnBuscados, #btnLimpiar, #btnStorage, #btnEquipo {
     background-color: rgb(192,95,66);
     width: 40vw;
     font-size: 4.7vw;
@@ -239,8 +240,9 @@ ul {
     margin-bottom: 1vw;
 }
 
-#btnBuscados:hover, #btnLimpiar:hover, #btnStorage:hover {
+#btnBuscados:hover, #btnLimpiar:hover, #btnStorage:hover, #btnEquipo:hover {
     background-color: rgb(193, 109, 83);
+    cursor: pointer;
 }
 
 .hidden {
@@ -298,17 +300,29 @@ ul {
 
 /*APARTADO EQUIPO*/
 
+div#equipoTitulo {
+    text-align: center;
+    background: radial-gradient(circle, rgba(35,35,35,1) 0%, rgba(255,255,255,1) 100%);
+    margin: 1vw 0vw;
+}
+
 div#equipo {
-    width: 98vw;
-    margin: 0vw 1vw;
+    width: 95%;
+    margin-left: 2.5vw;
     display: flex;
     flex-direction: row;
+    justify-content: center;
+}
+
+.scroll {
     overflow-x: scroll;
 }
 
 table {
-    background: linear-gradient(0deg, rgba(240,240,240,0) 16%, rgba(200,200,200,0.64) 16%, rgba(109,109,109,1) 81.6%, rgba(35,35,35,1) 100%);
+    background: linear-gradient(0deg, rgba(240,240,240,0) 20%, rgba(200,200,200,0.64) 20%, rgba(109,109,109,1) 81.6%, rgba(35,35,35,1) 100%);
     border-spacing: 0;
+    overflow: auto;
+    display: block;
 }
 
 table td {
@@ -336,29 +350,24 @@ table td {
 
 .tbutton img {
     height: 30px;
-    border: 1px solid black;
+    border-radius: 70px;
+    
 }
 
 .buttonContainer {
+    height: 45px;
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
 .tbutton {
+    border: none;
+    height: 33px;
     display: flex;
     flex-direction: column;
     background-color: transparent;
-    border: 1px solid black;
-    visibility: hidden;
-}
-
-table:hover  .tbutton{
-    visibility: visible;
-}
-
-.tbutton:active {
-    transform: scale(1.2);
+    border-radius: 70px;
 }
 
 /*COLOR DEL FONDO DE LAS TARJETAS*/
@@ -666,7 +675,6 @@ table:hover  .tbutton{
 
     div#buscadores {
         height: 4.5vw;
-        width: 60vw;
         padding: 0.75vw;
     }
 
@@ -722,9 +730,13 @@ table:hover  .tbutton{
         padding-left: 3.3vw;
     }
 
-    #btnBuscados, #btnLimpiar, #btnStorage {
+    #btnBuscados, #btnLimpiar, #btnStorage, #btnEquipo {
         width: 30vw;
         font-size: 3vw;
+    }
+
+    table {
+        background: linear-gradient(0deg, rgba(240,240,240,0) 17.5%, rgba(200,200,200,0.64) 17.5%, rgba(109,109,109,1) 81.6%, rgba(35,35,35,1) 100%);
     }
 
     .content {
@@ -739,7 +751,15 @@ table:hover  .tbutton{
     }
     
     .tbutton img {
-        height: 50px;;
+        height: 50px;
+    }
+
+    .tbutton {
+        height: 50px;
+    }
+
+    .buttonContainer {
+        height: 65px;
     }
 }
 
@@ -764,7 +784,6 @@ table:hover  .tbutton{
 
     div#buscadores {
         height: 4.5vw;
-        width: 70vw;
         padding: 0.5vw;
     }
 
@@ -786,11 +805,13 @@ table:hover  .tbutton{
     .slide2 {
         height: 16vw;
         border: 0.3vw solid black;
+        transform: translateX(-0.4vw);
+        font-size: 1.5vw;
     }
 
     .card-nombre {
-        font-size: 1.4vw;
         padding-top: 1vw;
+        font-size: 1.5vw;
     }
     
     .imagenCarrito {
@@ -806,11 +827,7 @@ table:hover  .tbutton{
     }
 
     .card:hover .slide.slide2 {
-        transform: translate(-0.7vw, 16.5vw);
-    }
-
-    .slide2 {
-        font-size: 1.5vw;
+        transform: translate(-0.4vw, 16.5vw);
     }
     
     ul {
@@ -818,18 +835,116 @@ table:hover  .tbutton{
         padding-right: 1vw;
     }
 
-
-    /* .swal-footer {
-        padding: 16px 0px;
+    .tituloBanner {
+        font-size: 28px;
     }
 
-    .swal-button {
-        font-size: 19px;
-    } */
+    #nBuscados, #tBuscados {
+        margin: 1.8vw;
+    }
 
-    #btnBuscados, #btnLimpiar, #btnStorage {
+    #btnBuscados, #btnLimpiar, #btnStorage, #btnEquipo {
         width: 20vw;
         font-size: 2.2vw;
     }
 
+    .tbutton:hover {
+        cursor: pointer;
+        scale: 1.1;
+        rotate: 360deg;
+        transition: 1s;
+    }
+
+}
+
+@media (min-width: 1440px) {
+    header {
+        background: linear-gradient(90deg, white 25%, rgb(49, 49, 49) 100%) ;
+    }
+    
+    #imagenLogo {
+        height: 8vw;
+    }
+
+    main {
+        padding-top: 10vw;
+    }
+
+    #container {
+        gap: 0.7vw;
+        padding: 5vw 1vw 0vw;
+        margin-bottom: 9vw;
+    }
+
+    div#buscadores {
+        height: 2.5vw;
+        padding: 0.5vw;
+    }
+    
+    select#opcionesFiltro {
+        width: 10vw;
+    }
+
+    input#buscador, select#opcionesFiltro {
+        border: 0.2vw solid grey;
+        font-size: 1.5vw;
+    }
+
+    input#buscador:focus, select#opcionesFiltro:focus {
+        border: 0.3vw solid grey;
+    }
+
+    .card, .slide {
+        width: 11vw;
+        height: 12vw;
+    }
+
+    .slide0 {
+        width: 10.2vw;
+        height: 11.2vw;
+        border: 0.4vw solid rgba(0, 0, 0, 0.399);
+    }
+
+    .slide2 {
+        height: 9.5vw;
+        border: 0.1vw solid black;
+        font-size: 1vw;
+        transform: translateX(-0.1vw)
+    }
+
+    .card-nombre {
+        font-size: 1.1vw;
+        padding-top: 0.3vw;
+    }
+    
+    .imagenCarrito {
+        width: 2vw;
+    }
+
+    .botonesEquipo {
+        height: 2vw;
+    }
+
+    #imagen-pokemon {
+        height: 70%;
+    }
+
+    .card:hover .slide.slide2 {
+        transform: translate(-0.1vw, 11vw);
+    }
+    
+    ul {
+        padding-left: 1.5vw;
+        padding-right: 0.5vw;
+    }
+
+    .tituloBanner {
+        font-size: 35px;
+    }
+
+    #btnBuscados, #btnLimpiar, #btnStorage, #btnEquipo {
+        width: 10vw;
+        font-size: 1.5vw;
+        margin: 0vw 1.2vw;
+    }
 }
