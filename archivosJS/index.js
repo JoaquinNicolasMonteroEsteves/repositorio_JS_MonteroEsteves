@@ -181,8 +181,9 @@ let limpiarBuscados = () => {
 btnLimpiar.addEventListener("click", limpiarBuscados)
 
 let limpiarEquipo = () => {
-    let equipo = []
+    equipo.splice(0, (equipo.length))
     cargarEquipoPokemon(equipo)
+    btnLimpiarEquipo.classList.add("hidden")
 }
 
 let mostrarLimpiarEquipo = () => {
@@ -204,6 +205,12 @@ let mostrarFiltradoNombre = () => {
             }
         })
         sessionStorage.setItem("Buscados-Nombre", JSON.stringify(buscadosNombre))
+        // debugger
+        let nombres = ""
+        buscadosNombre.forEach(a => {nombres += (capitalize(a.nombre) + "/")})
+        let buscados = new Busqueda (inputBuscador.value, opcionesFiltro.value, buscadosNombre.length, nombres)
+        console.log(buscados)
+        buscados.almacenar(buscados)
         container.innerHTML = `<img src="./Imagenes/EsperaPokeballNegroYBlancoNF.gif" class="imagen-carga">`
         setTimeout(() => {
             cargarPokemones(resultado)

@@ -80,6 +80,14 @@
         "evolucion": "Kadabra y Alakazam"
     },
     {
+        "nombre": "pumpkaboo",
+        "imagen": "./Imagenes/Pokemones/Pumpkaboo.png",
+        "bTipo": "fantasma planta",
+        "tipo": "Fantasma/Planta",
+        "ataqueFavorito": "Halloween",
+        "evolucion": "Gourgeist"
+    },
+    {
         "nombre": "porygon",
         "imagen": "./Imagenes/Pokemones/Porygon.png",
         "bTipo": "normal",
@@ -456,6 +464,14 @@
         "evolucion": "Trevenant"
     },
     {
+        "nombre": "larvitar",
+        "imagen": "./Imagenes/Pokemones/Larvitar.png",
+        "bTipo": "roca tierra",
+        "tipo": "Roca/Tierra",
+        "ataqueFavorito": "Lanzarrocas",
+        "evolucion": "Pupitar y Tyranitar"
+    },
+    {
         "nombre": "venipede",
         "imagen": "./Imagenes/Pokemones/Venipede.png",
         "bTipo": "bicho veneno",
@@ -544,6 +560,14 @@
         "evolucion": "Houndoom"
     },
     {
+        "nombre": "Flabébé",
+        "imagen": "./Imagenes/Pokemones/Flabébé.png",
+        "bTipo": "hada",
+        "tipo": "Hada",
+        "ataqueFavorito": "Viento feérico",
+        "evolucion": "Floette y Florges"
+    },
+    {
         "nombre": "carvanha",
         "imagen": "./Imagenes/Pokemones/Carvanha.png",
         "bTipo": "agua siniestro",
@@ -574,6 +598,14 @@
         "tipo": "Veneno/Lucha",
         "ataqueFavorito": "Puya nociva",
         "evolucion": "Toxicroak"
+    },
+    {
+        "nombre": "falinks",
+        "imagen": "./Imagenes/Pokemones/Falinks.png",
+        "bTipo": "lucha",
+        "tipo": "Lucha",
+        "ataqueFavorito": "Bastión final",
+        "evolucion": "No tiene"
     },
     {
         "nombre": "magnemite",

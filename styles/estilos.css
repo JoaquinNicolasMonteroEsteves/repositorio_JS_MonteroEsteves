@@ -92,7 +92,7 @@ select#opcionesFiltro {
 }
 
 .imagen-carga {
-    width: 70vw;
+    width: 210px;
 }
 
 /*CARDS POKEMON*/
@@ -307,11 +307,11 @@ div#equipoTitulo {
 }
 
 div#equipo {
-    width: 95%;
-    margin-left: 2.5vw;
+    margin: 0vw 1vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    justify-items: center;
 }
 
 .scroll {
@@ -604,6 +604,10 @@ table td {
     background: linear-gradient(126deg, rgba(108,93,203,0.500) 0%, rgba(253,86,156,0.500) 100%);
 }
 
+.roca.tierra {
+    background: linear-gradient(126deg, rgba(188,172,102,0.6) 0%, rgb(221, 187, 84, 0.500) 100%);
+}
+
 /*MEDIA-QUERYs*/
 
 @media (min-width: 480px) {
@@ -613,6 +617,10 @@ table td {
 
     #imagenLogo {
         height: 22vw;
+    }
+
+    .imagen-carga {
+        width: 310px;
     }
 
     .card, .slide {
@@ -663,6 +671,10 @@ table td {
 
     main {
         padding-top: 26vw;
+    }
+
+    .imagen-carga {
+        width: 450px;
     }
 
     #container {
