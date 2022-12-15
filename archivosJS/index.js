@@ -4,8 +4,14 @@ const inputBuscador = document.getElementById("buscador")
 const opcionesFiltro = document.getElementById("opcionesFiltro")
 const ntitulo = document.getElementById("nBuscadosTitulo")
 const ncontainer = document.getElementById("nBuscados")
+const btnNombreContainer = document.getElementById("btnNombreContainer")
+const detallesNombre = document.getElementById("detallesNombre")
+const nBody = document.getElementById("nBody")
 const ttitulo = document.getElementById("tBuscadosTitulo")
 const tcontainer = document.getElementById("tBuscados")
+const btnTipoContainer = document.getElementById("btnTipoContainer")
+const tBody = document.getElementById("tBody")
+const detallesTipo = document.getElementById("detallesTipo")
 const btnBuscados = document.getElementById("btnBuscados")
 const btnStorage = document.getElementById("btnStorage")
 const btnLimpiar = document.getElementById("btnLimpiar")
@@ -16,8 +22,9 @@ const pimagen = document.getElementById("pimagen")
 const ptipo = document.getElementById("ptipo")
 const pbutton = document.getElementById("pbutton")
 
-const buscadosNombre = []
-const buscadosTipo = []
+let buscadosNombre = []
+let buscadosTipo = []
+let buscados = []
 const equipo = []
 const pokemones = []
 
@@ -29,6 +36,27 @@ fetch(URL)
     .then(() => cargarPokemones(pokemones))
     .catch(error => container.innerHTML = swal("No se pudieron cargar correctamente los Pokemones", "Chequee la conexión con la base de datos", './Imagenes/errorCarga.gif', {buttons: {confirm: "Aceptar"}}))
 
+
+let llamarStorageNombre = () => {
+    if (!sessionStorage.getItem("Buscados-Nombre") == false) {
+        buscadosNombre = JSON.parse(sessionStorage.getItem("Buscados-Nombre"))
+    }
+}
+llamarStorageNombre()
+
+let llamarStorageTipo = () => {
+    if (!sessionStorage.getItem("Buscados-Tipo") == false) {
+        buscadosTipo = JSON.parse(sessionStorage.getItem("Buscados-Tipo"))
+    }
+}
+llamarStorageTipo()
+
+let llamarStorageBuscados = () => {
+    if (!sessionStorage.getItem("busquedas") == false) {
+        buscados = JSON.parse(sessionStorage.getItem("busquedas"))
+    }
+}
+llamarStorageBuscados()
 
 let cardPokemon = (pokemon) => {
     return `<div class="card">
@@ -145,17 +173,19 @@ let cargarPokemones = (array) => {
         }
 }
 
-let cargarPokemonesBuscados = (array, banner, elemento, filtro) => {
+let cargarPokemonesBuscados = (array, banner, elemento, detalle, filtro) => {
     let titulo = ""
     let contenido = ""
-        if(array.length > 0) {
+    let boton = ""
             array.forEach (pokemon => {
                 titulo = `<h2 class="tituloBanner">POR ${filtro}</h2>`
                 contenido += cardPokemonBuscado(pokemon)
+                boton = `<button id="btn${filtro}">Ver detalles</button>`
             })
             banner.innerHTML = titulo
             elemento.innerHTML = contenido
-        }
+            detalle.innerHTML = boton 
+            
 }
 
 let alertaBuscador = (a) => {
@@ -172,10 +202,14 @@ let alertaBuscador = (a) => {
 }
 
 let limpiarBuscados = () => {
-    tcontainer.innerHTML = ""
-    ttitulo.innerHTML = ""
-    ncontainer.innerHTML = ""
     ntitulo.innerHTML = ""
+    ncontainer.innerHTML = ""
+    btnNombreContainer.innerHTML = ""
+    nBody.innerHTML = ""
+    ttitulo.innerHTML = ""
+    tcontainer.innerHTML = ""
+    btnTipoContainer.innerHTML = ""
+    tBody.innerHTML = ""
     btnLimpiar.classList.add("hidden")
 }
 btnLimpiar.addEventListener("click", limpiarBuscados)
@@ -184,6 +218,7 @@ let limpiarEquipo = () => {
     equipo.splice(0, (equipo.length))
     cargarEquipoPokemon(equipo)
     btnLimpiarEquipo.classList.add("hidden")
+    swal("Todos los pokemones fueron liberados", "¡Tengan una buena vida amigos!", "./Imagenes/pokemonesLiberados.gif", {timer: 3300})
 }
 
 let mostrarLimpiarEquipo = () => {
@@ -207,10 +242,12 @@ let mostrarFiltradoNombre = () => {
         sessionStorage.setItem("Buscados-Nombre", JSON.stringify(buscadosNombre))
         // debugger
         let nombres = ""
-        buscadosNombre.forEach(a => {nombres += (capitalize(a.nombre) + "/")})
-        let buscados = new Busqueda (inputBuscador.value, opcionesFiltro.value, buscadosNombre.length, nombres)
-        console.log(buscados)
-        buscados.almacenar(buscados)
+        // buscadosNombre.forEach(a => {nombres += (capitalize(a.nombre) + "/")})
+        // let i = parseInt(Buscados.length) + 1
+        resultado.forEach(a => {nombres += (capitalize(a.nombre) + " ")})
+        let pokebusqueda = new Busqueda (inputBuscador.value, opcionesFiltro.value, resultado.length, nombres)
+        buscados.push(pokebusqueda)
+        sessionStorage.setItem("busquedas", JSON.stringify(buscados))
         container.innerHTML = `<img src="./Imagenes/EsperaPokeballNegroYBlancoNF.gif" class="imagen-carga">`
         setTimeout(() => {
             cargarPokemones(resultado)
@@ -230,6 +267,12 @@ let mostrarFiltradosTipo = () => {
             }
         })
         sessionStorage.setItem("Buscados-Tipo", JSON.stringify(buscadosTipo))
+
+        let nombres = ""
+        resultado.forEach(a => {nombres += (capitalize(a.nombre) + " ")})
+        let poksbuqueda = new Busqueda (inputBuscador.value, opcionesFiltro.value, resultado.length, nombres)
+        buscados.push(poksbuqueda)
+        sessionStorage.setItem("busquedas", JSON.stringify(buscados))
         container.innerHTML = `<img src="./Imagenes/EsperaPokeballNegroYBlancoNF.gif" class="imagen-carga">`
         setTimeout(() => {
             cargarPokemones(resultado)
@@ -260,11 +303,14 @@ let mostrarBuscados = () => {
     if((sessionStorage.getItem("Buscados-Nombre")) || (sessionStorage.getItem("Buscados-Tipo")) !== null) {
         if ((sessionStorage.getItem("Buscados-Nombre")) !== null) {
             let bnombre = JSON.parse(sessionStorage.getItem("Buscados-Nombre"))
-            cargarPokemonesBuscados(bnombre, ntitulo, ncontainer, "NOMBRE")
+            buscados = JSON.parse(sessionStorage.getItem("busquedas"))
+            cargarPokemonesBuscados(bnombre, ntitulo, ncontainer, btnNombreContainer, "NOMBRE")
+            detallesBuscados("btnNOMBRE","nombre", nBody)
         }
         if ((sessionStorage.getItem("Buscados-Tipo")) !== null) {
             let btipo = JSON.parse(sessionStorage.getItem("Buscados-Tipo"))
-            cargarPokemonesBuscados(btipo, ttitulo, tcontainer, "TIPO")
+            cargarPokemonesBuscados(btipo, ttitulo, tcontainer, btnTipoContainer, "TIPO")
+            detallesBuscados("btnTIPO", "bTipo", tBody)
         }
     btnLimpiar.classList.remove("hidden")
     } else {
@@ -273,10 +319,36 @@ let mostrarBuscados = () => {
 }
 btnBuscados.addEventListener("click", mostrarBuscados)
 
+mostrarDetalles = () => {
+
+}
+
+detallesBuscados = (id, filtroAplicado, tabla) => {
+    let btnDetalle = document.getElementById(`${id}`)
+    btnDetalle.addEventListener("click", () => {
+        let contenido = ""
+        let array = buscados.filter(x => x.filtro == `${filtroAplicado}`)
+        contenido =     `<tr>
+                            <th>Búsqueda realizada</th>
+                            <th>Resultado arrojado</th>
+                        </tr>`
+        array.forEach(y => {
+            contenido +=    `<tr>
+                                <td>"${y.valor}"</td>
+                                <td>${y.resultado}</td>
+                            </tr>`
+        })
+        tabla.innerHTML = contenido
+    })
+}
+
 let limpiarStorage = () => {
     sessionStorage.clear("Buscados-Nombre")
     sessionStorage.clear("Buscados-Tipo")
     limpiarBuscados()
+    buscadosNombre = []
+    buscadosTipo = []
+    buscados = []
     btnStorage.classList.add("hidden")
 }
 

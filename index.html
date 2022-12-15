@@ -29,24 +29,9 @@
         </div>
         <div id="container">
         </div>
-        <div id="resultados">
-            <div class="btns-resultados">
-                <button id="btnBuscados">Mostrar buscados</button>
-                <button id="btnStorage" class="hidden">Limpiar historial</button>
-            </div>
-            <div>
-                <div id="nBuscadosTitulo"></div>
-                <div id="nBuscados"></div>
-            </div>
-            <div>
-                <div id="tBuscadosTitulo"></div>
-                <div id="tBuscados"></div>
-            </div>
-            <button id="btnLimpiar" class="hidden">Ocultar buscados</button>
-        </div>
         <div id="equipoTitulo"></div>
         <div id="equipo">
-            <table>
+            <table id="tablaEquipo">
                 <tbody>
                     <tr id="pnombre">
                     </tr>
@@ -60,6 +45,37 @@
             </table>
         </div>
         <button id="btnEquipo" class="hidden">Liberar a todos los pokemones</button>
+        <div id="resultados">
+            <div class="btns-resultados">
+                <button id="btnBuscados">Mostrar buscados</button>
+                <button id="btnStorage" class="hidden">Limpiar historial</button>
+            </div>
+            <div>
+                <div id="nBuscadosTitulo"></div>
+                <div id="nBuscados"></div>
+                <div id="btnNombreContainer"></div>
+                <div>
+                    <table id="detallesNombre">
+                        <tbody id="nBody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div>
+                <div id="tBuscadosTitulo"></div>
+                <div id="tBuscados"></div>
+                <div id="btnTipoContainer"></div>
+                <div>
+                    <table id="detallesTipo">
+                        <tbody id="tBody">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <button id="btnLimpiar" class="hidden">Ocultar buscados</button>
+        </div>
     </main>
 </body>
 </html>

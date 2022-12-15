@@ -223,7 +223,7 @@ ul {
 }
 
 
-#btnBuscados, #btnLimpiar, #btnStorage, #btnEquipo {
+#btnBuscados, #btnLimpiar, #btnStorage, #btnEquipo, #btnNOMBRE, #btnTIPO {
     background-color: rgb(192,95,66);
     width: 40vw;
     font-size: 4.7vw;
@@ -231,6 +231,10 @@ ul {
     margin: 0vw 2.4vw;
     border-radius: 0.8vw;
     box-shadow: -1.75vw 1.2vw 2.5vw rgba(0,0,0); /*Horizontal offset | Vertical offset | Blur (difuminado) | Spread (tamaño)*/
+}
+
+#btnNOMBRE, #btnTIPO {
+    width: 20vw;
 }
 
 .btns-resultados {
@@ -245,6 +249,8 @@ ul {
     cursor: pointer;
 }
 
+
+
 .hidden {
     visibility: hidden;
 }
@@ -252,6 +258,15 @@ ul {
 #resultados {
     padding: 2.5vw 0vw;
 }
+
+#nBody, #tBody {
+    background: linear-gradient(180deg, rgba(200,200,200,0.64) 0%, rgba(35,35,35,1) 100%);
+    border-spacing: 5px;
+    display: block;
+
+}
+
+
 
 /*SWAL*/
 
@@ -318,7 +333,7 @@ div#equipo {
     overflow-x: scroll;
 }
 
-table {
+#tablaEquipo {
     background: linear-gradient(0deg, rgba(240,240,240,0) 20%, rgba(200,200,200,0.64) 20%, rgba(109,109,109,1) 81.6%, rgba(35,35,35,1) 100%);
     border-spacing: 0;
     overflow: auto;
@@ -748,7 +763,12 @@ table td {
         font-size: 3vw;
     }
 
-    table {
+    #btnNOMBRE, #btnTIPO {
+        width: 10vw;
+        font-size: 2vw;
+    }
+
+    #tablaEquipo {
         background: linear-gradient(0deg, rgba(240,240,240,0) 17.5%, rgba(200,200,200,0.64) 17.5%, rgba(109,109,109,1) 81.6%, rgba(35,35,35,1) 100%);
     }
 
@@ -957,7 +977,7 @@ table td {
         font-size: 35px;
     }
 
-    #btnBuscados, #btnLimpiar, #btnStorage, #btnEquipo {
+    #btnBuscados, #btnLimpiar, #btnStorage, #btnEquipo, #btnNOMBRE, #btnTIPO {
         width: 10vw;
         font-size: 1.5vw;
         margin: 0vw 1.2vw;
