@@ -263,12 +263,16 @@ ul {
     background: linear-gradient(180deg, rgba(200,200,200,0.64) 0%, rgba(35,35,35,1) 100%);
     border-spacing: 5px;
     display: block;
-
+    
 }
 
 
 
 /*SWAL*/
+
+.swal-instrucciones {
+    width: 300px;
+}
 
 .swal-modal {
     border: 5px solid black;
@@ -312,6 +316,7 @@ ul {
     margin: 0px 16px;
     text-align: center;
 }
+
 
 /*APARTADO EQUIPO*/
 
@@ -689,6 +694,10 @@ table td {
         padding-bottom: 12vw;
     }
 
+    .swal-instrucciones {
+        width: 640px;
+    }
+    
     .imagen-carga {
         width: 450px;
     }

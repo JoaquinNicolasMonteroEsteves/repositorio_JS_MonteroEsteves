@@ -5,8 +5,4 @@ class Busqueda {
         this.largo = parseInt(largo)
         this.resultado = resultado
     }
-
-    almacenar = (array) => {
-        sessionStorage.setItem(array.valor, JSON.stringify(array))
-    }
 }

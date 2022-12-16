@@ -127,7 +127,7 @@ let liberacionPokemon = () => {
                     swal(capitalize(`${equipo[coincidencia].nombre}`)+ " fue liberado...", "...nos volveremos a encontrar!", "./Imagenes/pokemonLiberado.gif")
                     equipo.splice(coincidencia, 1),
                     cargarEquipoPokemon(equipo)
-            }, 1500)
+                }, 1500)
         })
     })
     
@@ -218,7 +218,7 @@ let limpiarEquipo = () => {
     equipo.splice(0, (equipo.length))
     cargarEquipoPokemon(equipo)
     btnLimpiarEquipo.classList.add("hidden")
-    swal("Todos los pokemones fueron liberados", "¡Tengan una buena vida amigos!", "./Imagenes/pokemonesLiberados.gif", {timer: 3300})
+    swal("Todos los pokemones fueron liberados", "¡Tengan una buena vida amigos!", "./Imagenes/pokemonesLiberados.gif", {timer: 3300, showConfirmButon: false})
 }
 
 let mostrarLimpiarEquipo = () => {
@@ -392,3 +392,10 @@ let alertaMolestado = (x) => {
             swal("¡Zafaste!", "", "./Imagenes/PokemonEscape.gif");}
     });
 }
+
+swal(
+    "INSTRUCCIONES",
+    "En esta página podrá armar el equipo que más le guste interaccionando con los pokemones que sean de su interés.\n" + "Arrastrándose sobre las tarjetas podrá ver características de cada Pokemon, mientras que haciendo 'click' sobre la pokebola interaccionará con ellos.\n" + "Podrá ver el registro de sus búsquedas al final del sitio.\n" + "Disfrute y ¡atrápelos ya!",
+    "info",
+    {className: "swal-instrucciones"}
+)
